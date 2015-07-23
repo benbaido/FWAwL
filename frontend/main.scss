@@ -7,4 +7,8 @@ html, body{
 
 @import 'helpers/all';
 @import 'base/all';
-@import 'modules/all'
+@import 'modules/all';
+
+body {
+    @include transition(all, 0.6s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.1s);
+}

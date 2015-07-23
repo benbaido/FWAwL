@@ -4,6 +4,51 @@ html, body {
   height: 100%; }
 
 /* underscore tells sass that these are partial files. not meant to be compiled */
+.navbar-inverse {
+  background-color: #000; }
+
+.navbar form {
+  width: 50%;
+  float: left;
+  margin-right: 10px; }
+
+a,
+a:visited {
+  text-decoration: none;
+  text-transform: none; }
+
+a:hover,
+a:active {
+  text-decoration: none;
+  text-transform: none; }
+
+.main_container {
+  position: relative;
+  margin-top: 100px;
+  padding: 100px;
+  color: blue; }
+
+.fake_button {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
+  @media all and (max-width: 767px) {
+    .fake_button {
+      padding: 8px;
+      width: 120px;
+      font-size: 12pt; } }
+  @media all and (min-width: 768px) {
+    .fake_button {
+      padding: 10px;
+      width: 200px;
+      font-size: 14pt; } }
+
 .no_display {
   display: none; }
 
@@ -203,7 +248,7 @@ body {
   padding-right: 20px;
   padding-bottom: 10px; }
 
-#main_container {
+#index_container {
   position: relative;
   margin: 0px;
   padding: 0px;
@@ -212,14 +257,6 @@ body {
   background-color: #fafafa;
   overflow-x: hidden;
   overflow-y: hidden; }
-
-a, a:visited {
-  text-decoration: none;
-  text-transform: none; }
-
-a:hover, a:active {
-  text-decoration: none;
-  text-transform: none; }
 
 .panel {
   height: 100%;
@@ -233,6 +270,7 @@ a:hover, a:active {
 .expand_out {
   position: absolute;
   top: 0;
+  right: -768px;
   padding-top: 60px;
   height: 100%;
   display: block;
@@ -305,20 +343,6 @@ a:hover, a:active {
   margin-right: 80px;
   margin-left: 40px; }
 
-.fake_button {
-  margin-right: auto;
-  margin-left: auto;
-  padding: 10px;
-  width: 200px;
-  text-align: center;
-  font-size: 14pt;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-  cursor: pointer; }
-
 #landing_content .fake_button {
   background-color: #bbdefb;
   border-left: solid 1px #448aff;
@@ -374,5 +398,23 @@ a:hover, a:active {
   color: #7cb342; }
 #culture_content a:hover, #culture_content a:active {
   color: #b2ff59; }
+
+body {
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.6s;
+  -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-property: all;
+  -moz-transition-duration: 0.6s;
+  -moz-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition-delay: 0.1s;
+  -o-transition-property: all;
+  -o-transition-duration: 0.6s;
+  -o-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition-delay: 0.1s;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-delay: 0.1s; }
 
 /*# sourceMappingURL=main.css.map */

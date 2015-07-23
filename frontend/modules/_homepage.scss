@@ -1,5 +1,5 @@
 
-#main_container {
+#index_container {
     position: relative;
     margin: 0px;
     padding: 0px;
@@ -12,37 +12,10 @@
     overflow-y: hidden;
 }
 
-a, a:visited {
-    text-decoration: none;
-    text-transform: none;
-}
-
-a:hover, a:active {
-    text-decoration: none;
-    text-transform: none;
-}
 
 #nav_container {
     
 }
-
-$max-panel-width: 80px;
-$max-expand-width: 300px;
-$landing-base-color: #82b1ff;
-$dressup-base-color: #ff5252;
-$catalog-base-color: #ffe57f;
-$culture-base-color: #b2ff59;
-
-$landing-light-color: #bbdefb;
-$dressup-light-color: #ff8a80;
-$catalog-light-color: #fefcb3;
-$culture-light-color: #ccff90;
-
-$landing-dark-color: #448aff;
-$dressup-dark-color: #ff1744;
-$catalog-dark-color: #ffd740;
-$culture-dark-color: #7cb342;//76ff03 7cb342
-
 
 .panel {
     
@@ -62,7 +35,10 @@ $culture-dark-color: #7cb342;//76ff03 7cb342
 .expand_out {
     position: absolute;
     top: 0;
-    //right: -($max-expand-width);
+    
+    
+    
+    right: -($max-expand-width);
     padding-top: 60px;
     //display: none;
     
@@ -77,6 +53,7 @@ $culture-dark-color: #7cb342;//76ff03 7cb342
     align-content: center;
     
     @include transition(all, 0.6s, cubic-bezier(0.175, 0.885, 0.32, 1.275), 0.1s);
+    //@include transition(all, 0.6s, cubic-bezier(0.23, 1, 0.32, 1), 0.1s);
 }
 
 #landing_container {
@@ -200,19 +177,7 @@ $culture-dark-color: #7cb342;//76ff03 7cb342
     margin-left: 40px;
 }
 
-.fake_button {
-    margin-right: auto;
-    margin-left: auto;
-    padding: 10px;
-    width: 200px;
-    
-    text-align: center;
-    font-size: 14pt;
-    
-    @include border-radius(10px);
-    
-    cursor: pointer;
-}
+
 
 #landing_content {
     .fake_button {

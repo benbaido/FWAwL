@@ -1,0 +1,26 @@
+//cheetsheet for @media
+//not really using as a scss file...just wanted the colors
+
+@media all and (max-width: 320px) {
+    //small phone
+}
+
+@media all and (max-width: 480px) {
+    //phone
+}
+
+@media all and (max-width: 767px) {
+    //tablet
+}
+
+@media all and (min-width: 768px) and (max-width: 1023) {
+    //half screen desktop
+}
+
+@media all and (min-width: 1024px) {
+    //half screen desktop
+}
+
+@media all and (min-width: 1200px) {
+    //full screen desktop
+}

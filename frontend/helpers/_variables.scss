@@ -1,34 +1,48 @@
 /* underscore tells sass that these are partial files. not meant to be compiled */
 
+//font
+$font: Helvetica,
+sans-serif;
+$font-alert-weight: 600;
+//colors
 $font-color: 222;
 $success-color: #b7c11e;
 $warning-color: #23a38f;
 $error-color: #f0563d;
-$shadow-color: rgba(0, 0, 0, .2);
-
-
-$font: Helvetica, sans-serif;
-$font-alert-weight: 600;
-
-//dress up game variables
-    //colors
+$shadow-color: rgba(0,
+0,
+0,
+.2);
+//dress up game
 $dug-section-bgcolor: #DDD;
 $dug-section-header-bgcolor: #CCC;
-
 $dug-option-selection-bgcolor: #EEE;
 $dug-selection-outline-color: #AAA;
+//home page
+$landing-base-color: #82b1ff;
+$dressup-base-color: #ff5252;
+$catalog-base-color: #ffe57f;
+$culture-base-color: #b2ff59;
+$landing-light-color: #bbdefb;
+$dressup-light-color: #ff8a80;
+$catalog-light-color: #fefcb3;
+$culture-light-color: #ccff90;
+$landing-dark-color: #448aff;
+$dressup-dark-color: #ff1744;
+$catalog-dark-color: #ffd740;
+$culture-dark-color: #7cb342; //76ff03 7cb342
 
-    //sizes
+//sizes
+$max-panel-width: 80px;
+$max-expand-width: 768px;
+//dress up game
 $dug-avatarbox-minheight: 450px;
-
 $dug-settingsbox-minheight: 160px;
-
 $dug-optionsrack-container-minheight: 400px;
 $dug-optionsbox-minheight: $dug-optionsrack-container-minheight;
 $dug-option-selectionbox-maxheigt: $dug-optionsbox-minheight - 50px;
-
 $dug-myrackbox-minheight: $dug-optionsrack-container-minheight;
-$dug-myrack-hanger-maxheight: $dug-myrackbox-minheight - 30px; 
-
+$dug-myrack-hanger-maxheight: $dug-myrackbox-minheight - 30px;
 $dug-mypicksbox-minheight: 200px;
 $dug-mypicks-resultscontainer-maxheight: $dug-mypicksbox-minheight - 10px;
+//other
