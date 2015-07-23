@@ -1,0 +1,45 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin box-shadow($x, $y, $spread, $color) {
+    -webkit-box-shadow: $x $y $spread $color;
+    -moz-box-shadow: $x $y $spread $color;
+    -ms-box-shadow: $x $y $spread $color;
+    -o-box-shadow: $x $y $spread $color;
+    box-shadow: $x $y $spread $color;
+}
+
+@mixin rotate-transform($deg) {
+    -webkit-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    transform: rotate($deg);
+    
+}
+
+@mixin transition($prop, $duration, $timingfunc, $delay) {
+    -webkit-transition-property: $prop;
+    -webkit-transition-duration: $duration;
+    -webkit-transition-timing-function: $timingfunc;
+    -webkit-transition-delay: $delay;
+    
+    -moz-transition-property: $prop;
+    -moz-transition-duration: $duration;
+    -moz-transition-timing-function: $timingfunc;
+    -moz-transition-delay: $delay;
+    
+    -o-transition-property: $prop;
+    -o-transition-duration: $duration;
+    -o-transition-timing-function: $timingfunc;
+    -o-transition-delay: $delay;
+    
+    transition-property: $prop;
+    transition-duration: $duration;
+    transition-timing-function: $timingfunc;
+    transition-delay: $delay;
+    
+}

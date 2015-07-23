@@ -1,0 +1,34 @@
+/* underscore tells sass that these are partial files. not meant to be compiled */
+
+$font-color: 222;
+$success-color: #b7c11e;
+$warning-color: #23a38f;
+$error-color: #f0563d;
+$shadow-color: rgba(0, 0, 0, .2);
+
+
+$font: Helvetica, sans-serif;
+$font-alert-weight: 600;
+
+//dress up game variables
+    //colors
+$dug-section-bgcolor: #DDD;
+$dug-section-header-bgcolor: #CCC;
+
+$dug-option-selection-bgcolor: #EEE;
+$dug-selection-outline-color: #AAA;
+
+    //sizes
+$dug-avatarbox-minheight: 450px;
+
+$dug-settingsbox-minheight: 160px;
+
+$dug-optionsrack-container-minheight: 400px;
+$dug-optionsbox-minheight: $dug-optionsrack-container-minheight;
+$dug-option-selectionbox-maxheigt: $dug-optionsbox-minheight - 50px;
+
+$dug-myrackbox-minheight: $dug-optionsrack-container-minheight;
+$dug-myrack-hanger-maxheight: $dug-myrackbox-minheight - 30px; 
+
+$dug-mypicksbox-minheight: 200px;
+$dug-mypicks-resultscontainer-maxheight: $dug-mypicksbox-minheight - 10px;

@@ -1,0 +1,315 @@
+
+#main_container {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    
+    width: 100%;
+    height: 100%;
+    
+    background-color: #fafafa;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+a, a:visited {
+    text-decoration: none;
+    text-transform: none;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    text-transform: none;
+}
+
+#nav_container {
+    
+}
+
+$max-panel-width: 80px;
+$max-expand-width: 300px;
+$landing-base-color: #82b1ff;
+$dressup-base-color: #ff5252;
+$catalog-base-color: #ffe57f;
+$culture-base-color: #b2ff59;
+
+$landing-light-color: #bbdefb;
+$dressup-light-color: #ff8a80;
+$catalog-light-color: #fefcb3;
+$culture-light-color: #ccff90;
+
+$landing-dark-color: #448aff;
+$dressup-dark-color: #ff1744;
+$catalog-dark-color: #ffd740;
+$culture-dark-color: #7cb342;//76ff03 7cb342
+
+
+.panel {
+    
+    //width: 6%;
+    //min-width: 25px;
+    
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    
+    color: #ffffff;
+    word-break: break-all;
+    text-align: left;
+}
+
+.expand_out {
+    position: absolute;
+    top: 0;
+    //right: -($max-expand-width);
+    padding-top: 60px;
+    //display: none;
+    
+    //width: $max-expand-width;
+    //min-width: 200px;
+    height: 100%;
+    
+    display: block;
+    
+    text-align: center;
+    vertical-align: middle;
+    align-content: center;
+    
+    @include transition(all, 0.6s, cubic-bezier(0.175, 0.885, 0.32, 1.275), 0.1s);
+}
+
+#landing_container {
+    //position: absolute;
+    //top: 0;
+    //right: 75px;
+    //right: 60px;
+    //min-width: 20px;
+    //width: 90%;
+    //height: 100%;
+    
+    width: $max-panel-width;
+    
+    background-color: $landing-base-color;
+    
+    z-index: 5;
+}
+
+#dressup_container {
+    //position: absolute;
+    //top: 0;
+    //right: 50px;
+    //width: 30px;
+    //height: 100%;
+    
+    width: ($max-panel-width / 2) + ($max-panel-width / 4);
+    
+    background-color: $dressup-base-color;
+    
+    z-index: 10;
+    
+    //left: 20px;
+    //width: 95%;
+}
+
+#catalog_container {
+    //position: absolute;
+    //top: 0;
+    //right: 25px;
+    //min-width: 30px;
+    //width: 80%;
+    //height: 100%;
+    
+    width: $max-panel-width / 2;
+    
+    background-color: $catalog-base-color;
+    
+    z-index: 15;
+}
+
+#culture_container {
+    //position: absolute;
+    //top: 0;
+    //right: 0px;
+    //min-width: 30px;
+    //width: 95%;
+    //height: 100%;
+    
+    width: $max-panel-width / 4;
+    background-color: $culture-base-color;
+    
+    z-index: 20;
+}
+
+
+#landing_expanded {
+    //position: relative;
+    
+    //min-width: 200px;
+    //width: 80%;
+    //height: 99%;
+    //padding: 20px;
+    //right: 60px;
+    
+    //display:inline-block;
+    //visibility: visible;
+    
+    background-color: $landing-base-color;
+    
+}
+
+#landing_dressup_game {
+    //position: absolute;
+    
+    //top: 100px;
+    
+    width: 250px;
+    //height: 10px;
+    margin-bottom: 10px;
+    background-color: crimson;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#landing_slideshow {
+    //position: absolute;
+    //bottom: 100px;
+    width: 100%;
+    min-height: 300px;
+    background-color: cornflowerblue;
+}
+
+#dressup_expanded {
+    background-color: $dressup-base-color;
+    
+    //z-index: 10;
+}
+
+#catalog_expanded {
+    background-color: $catalog-base-color;
+}
+
+#culture_expanded {
+    background-color: $culture-base-color;
+}
+
+.expand_content {
+    width: 70%;
+    margin-right: 80px;
+    margin-left: 40px;
+}
+
+.fake_button {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    width: 200px;
+    
+    text-align: center;
+    font-size: 14pt;
+    
+    @include border-radius(10px);
+    
+    cursor: pointer;
+}
+
+#landing_content {
+    .fake_button {
+        background-color: $landing-light-color;
+        
+        border-left: solid 1px $landing-dark-color;
+        border-right: solid 1px $landing-dark-color;
+        
+        border-top: solid 1px $landing-dark-color;
+        border-bottom: solid 4px $landing-dark-color;
+    }
+    
+    .fake_button:active {
+        border-top: solid 4px $landing-dark-color;
+        border-bottom: solid 1px $landing-dark-color;
+    }
+    
+    a, a:visited {
+        color: $landing-dark-color;
+    }
+        
+    a:hover, a:active {
+        color: $landing-base-color;
+    }
+}
+
+#dressup_content {
+    .fake_button {
+        background-color: $dressup-light-color;
+        
+        border-left: solid 1px $dressup-dark-color;
+        border-right: solid 1px $dressup-dark-color;
+        
+        border-top: solid 1px $dressup-dark-color;
+        border-bottom: solid 4px $dressup-dark-color;
+    }
+    
+    .fake_button:active {
+        border-top: solid 4px $dressup-dark-color;
+        border-bottom: solid 1px $dressup-dark-color;
+    }
+    
+    a, a:visited{
+        color: $dressup-dark-color;
+    }
+    
+    a:hover, a:active{
+        color: $dressup-base-color;
+    }
+}
+
+#catalog_content {
+    .fake_button {
+        background-color: $catalog-light-color;
+        
+        border-left: solid 1px $catalog-dark-color;
+        border-right: solid 1px $catalog-dark-color;
+        
+        border-top: solid 1px $catalog-dark-color;
+        border-bottom: solid 4px $catalog-dark-color;
+    }
+    
+    .fake_button:active {
+        border-top: solid 4px $catalog-dark-color;
+        border-bottom: solid 1px $catalog-dark-color;
+    }
+    
+    a, a:visited {
+        color: $catalog-dark-color;
+    }
+        
+    a:hover, a:active {
+        color: $catalog-base-color;
+    }
+}
+
+#culture_content{
+    .fake_button {
+        background-color: $culture-light-color;
+        
+        border-left: solid 1px $culture-dark-color;
+        border-right: solid 1px $culture-dark-color;
+        
+        border-top: solid 1px $culture-dark-color;
+        border-bottom: solid 4px $culture-dark-color;
+    }
+    
+    .fake_button:active {
+        border-top: solid 4px $culture-dark-color;
+        border-bottom: solid 1px $culture-dark-color;
+    }
+    
+    a, a:visited {
+        color: $culture-dark-color;
+    }
+    
+    a:hover, a:active {
+        color: $culture-base-color;
+    }
+}

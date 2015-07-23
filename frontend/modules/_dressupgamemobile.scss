@@ -1,0 +1,336 @@
+body {
+    background-color: blue;
+}
+
+//dress up game container
+#dressupgame_container {
+    margin: 0px;
+    padding: 0px;
+    //margin-top: 50px;
+    
+    width: 480px;
+    
+    height: 100%;
+    
+    position: relative;
+    
+    overflow-x: hidden;
+}
+
+//tabs
+#tab_container {
+    display: block;
+    
+    min-width: 40px;
+    width: 10%;
+    height: 98%;
+    
+    margin-top: 20px;
+    
+    margin: 0px;
+    padding: 0px;
+    padding-right: 5px;
+    //padding-top: 30px;
+    
+    position: fixed;
+    top: 40;
+    right: 0;
+    
+    z-index: 20;
+    
+    //background-color: darkviolet;
+}
+
+.dressup_tab {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    
+    //@include rotate-transform(270deg);
+    
+    //TODO: write height thing in jquery
+    //^don't have to...fixed with sass
+    
+    width: 100%;
+    //height: 160px;
+    height: (100%) / 4;
+    text-align: right;
+    vertical-align: bottom;
+    span {
+        margin: 0px;
+        padding: 0px;
+        
+        color: #DDD;
+        font-size: 18pt;
+        //word-break: break-all;
+        word-wrap: break-word;
+    }
+    
+    cursor: pointer;
+}
+
+#tab_avatar {
+    background-color: blue;
+}
+
+#tab_options {
+    background-color: red;
+}
+
+#tab_myrack {
+    background-color: gold;
+}
+
+#tab_mypicks {
+    background-color: green;
+}
+
+//options container
+//#option_container {display: none;}
+//doesn't exist either
+
+//headers
+.dug_header {
+    background-color: $dug-section-header-bgcolor;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    a, a:visited {
+        text-decoration: none;
+        text-transform: none;
+        
+        cursor: pointer;
+    }
+    
+    a:hover, a:active {
+        text-decoration: none;
+        text-transform: none;
+    }
+    
+    #options_nav_select {
+        width: 80%;
+        height: 30px;
+        
+    }
+}
+
+//avatar container
+#avatar_container {
+    width: 90%;
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: auto;
+    margin-top: 10px;
+    height: 96%;
+    
+    
+    //display: none;
+    
+}
+
+//avatar box
+#avatar_box {
+    background-color: $dug-section-bgcolor;
+    
+    height: 74%;
+    
+    //min-width: 150px;
+    //width: 70%;
+    //height: 95%;
+    //margin-bottom: 5px;
+    
+    //display: inline-block;
+}
+
+#avatar_overlaybox {
+    width: 25px;
+    height: 50px;
+    span {
+        padding: 10px;
+    }
+    
+}
+
+//settings
+#settings_box {
+    
+    height: 20%;
+    
+    //min-width: 100px;
+    //width: 25%;
+    //height: 95%;
+    background-color: $dug-section-bgcolor;
+    margin: 0px;
+    padding: 0px;
+    
+    //display: inline-block;
+}
+
+//options
+//#options_rack_container {}
+//kinda doesn't exist here
+
+#options_box {
+    width: 90%;
+    margin-left: 10px;
+    margin-right: auto;
+    
+    background-color: $dug-section-bgcolor;
+    
+    //display: none;
+}
+
+#dug_breadcrumbs {
+    
+}
+
+#options_nav_bar {
+    text-align: justify;
+}
+
+#options_nav {
+    width: 100%;
+    
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    
+    li {
+        display: inline-block;
+        padding: 2px;
+    }
+}
+
+#fabric_nav {
+    width: 100%;
+    
+    list-style-type: none;
+    padding: none;
+    margin: 0px;
+    
+    li {
+        display: inline-block;
+        padding: 2px;
+    }
+}
+
+#options_selection_container {
+    width: 100%;
+    margin: 0px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-left: 5px;
+    padding-right: 5px;
+    
+    padding-bottom:  10px;
+}
+
+.selection_box, .result_box {
+    display: inline-block;
+    //min-width: 150px;
+    width: (90%) / 2;
+    //min-height: 150px;
+    height: (40%) / 2;
+    
+    margin: 3px;
+    
+    outline: 1px solid $dug-selection-outline-color;
+    
+    position: relative;
+    
+    background-color: $dug-option-selection-bgcolor;
+    
+    cursor: pointer;
+}
+
+.selection_header, .result_header, .hanged_selection_header {
+    border-bottom: 1px solid $dug-selection-outline-color;
+    
+    span {
+        padding: 0px;
+        margin: 0px;
+        padding-left: 2px;
+    }
+    
+    .glyphicon {
+        position: absolute;
+        right: 0;
+    }
+}
+
+.selection_img, .results_img, .hanged_img {
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//my rack
+#myRack_box {
+    width: 90%;
+    margin-left: 10px;
+    margin-right: auto;
+    
+    background-color: $dug-section-bgcolor;
+    
+    //display: none;
+}
+
+#hanger_rack_container {
+    width: 100%;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hanged_selection {
+    display: inline-block;
+    min-width: 150px;
+    width: (70%) / 3;
+    height: 150px;
+    
+    //margin-bottom: 10px;
+    margin: 5px;
+    margin-left: 5px;
+    outline: 1px solid $dug-selection-outline-color;
+    
+    position: relative;
+    
+    background-color: $dug-option-selection-bgcolor;
+    
+    cursor: pointer;
+}
+
+//my picks
+#myPicks_box {
+    //display: block;
+    
+    width: 90%;
+    margin-left: 10px;
+    margin-right: auto;
+    
+    background-color: $dug-section-bgcolor;
+    
+    //display: none;
+}
+
+#mypicks_results_box {
+    
+    width: 100%;
+    margin: 0px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    padding-bottom:  10px;
+}
+

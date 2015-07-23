@@ -1,0 +1,300 @@
+body {
+    //background-color: red;
+}
+
+//dress up game container
+#dressupgame_container {
+    position: relative;
+    
+    width: 80%;
+    
+    margin: 10px;
+    padding: 0px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//avatar container
+#avatar_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 25%;
+}
+
+//options contaienr
+#option_container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: aliceblue;
+    display: inline-block;
+    width: 74%;
+}
+
+//headers
+.dug_header {
+    margin: 0px;
+    margin-bottom: 5px;
+    padding: 0px;
+    padding-left: 10px;
+    
+    width: 100%;
+    background-color: $dug-section-header-bgcolor;
+    
+    a, a:visited {
+        text-decoration: none;
+        text-transform: none;
+        
+        cursor: pointer;
+    }
+    
+    a:hover, a:active {
+        text-decoration: none;
+        text-transform: none;
+    }
+    
+}
+
+//avatar box
+#avatar_box {
+    display: block;
+    
+    background-color: $dug-section-bgcolor;
+    
+    margin-bottom: 5px;
+    
+    min-height: $dug-avatarbox-minheight;
+}
+
+#avatar_overlaybox {
+    position: absolute;
+    top: 25;
+    right: 1;
+    
+    span {
+        width: 25px;
+        height: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        
+        cursor: pointer;
+    }
+    
+}
+
+//settings
+#settings_box {
+    display: block;
+    
+    background-color: $dug-section-bgcolor;
+    
+    min-height: $dug-settingsbox-minheight;
+}
+
+//options
+#options_rack_container {
+    position: relative;
+    margin-bottom: 5px;
+    
+    min-height: $dug-optionsrack-container-minheight;
+}
+
+#options_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    display: inline-block;
+    width: 80%;
+    
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+    background-color: $dug-section-bgcolor;
+    
+    max-height: $dug-optionsbox-minheight;
+    
+}
+
+#dug_breadcrumbs {
+    
+}
+
+#options_nav_bar {
+    text-align: justify;
+}
+
+#options_nav {
+    width: 100%;
+    
+    //display: none;
+    
+    list-style-type: none;
+    padding: none;
+    margin: 0px;
+    
+    li {
+        display: inline-block;
+        padding: 2px;
+    }
+}
+
+#fabric_nav {
+    width: 100%;
+    
+    display: none;
+    
+    list-style-type: none;
+    padding: none;
+    margin: 0px;
+    
+    li {
+        display: inline-block;
+        padding: 2px;
+    }
+}
+
+#options_selection_container {
+    max-height: $dug-option-selectionbox-maxheigt;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    width: 80%;
+    margin: 0px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    padding-bottom:  10px;
+}
+
+.selection_box, .result_box {
+    display: inline-block;
+    width: 90px;
+    min-height: 90px;
+    
+    margin: 3px;
+    
+    outline: 1px solid $dug-selection-outline-color;
+    
+    position: relative;
+    
+    background-color: $dug-option-selection-bgcolor;
+    
+    cursor: pointer;
+}
+
+.selection_header, .result_header, .hanged_selection_header {
+    border-bottom: 1px solid $dug-selection-outline-color;
+    
+    span {
+        padding: 0px;
+        margin: 0px;
+        padding-left: 2px;
+    }
+    
+    .glyphicon {
+        position: absolute;
+        right: 0;
+    }
+}
+
+.selection_img, .results_img, .hanged_img {
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//my rack
+#myRack_box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    display: inline-block;
+    width: 19%;
+    background-color: $dug-section-bgcolor;
+    
+    min-height: $dug-myrackbox-minheight;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#hanger_rack_container {
+    max-height: $dug-myrack-hanger-maxheight;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    width: 100%;
+    margin: 0px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-left: 5px;
+    padding-right: 10px;
+    
+    padding-bottom:  10px;
+}
+
+.hanged_selection {
+    display: inline-block;
+    width: 90%;
+    min-height: 90px;
+    
+    margin: 3px;
+    
+    outline: 1px solid $dug-selection-outline-color;
+    
+    position: relative;
+    
+    background-color: $dug-option-selection-bgcolor;
+    
+    cursor: pointer;
+}
+
+//my picks
+#myPicks_box {
+    display: block;
+    width: 100%;
+    
+    background-color: $dug-section-bgcolor;
+    
+    min-height: $dug-mypicksbox-minheight;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    margin-bottom: 20px;
+    
+}
+
+#mypicks_results_box {
+    max-height: $dug-mypicks-resultscontainer-maxheight;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    width: 100%;
+    margin: 0px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    padding-bottom:  10px;
+}
+

@@ -1,0 +1,546 @@
+<html>
+<head>
+    <title>
+        Dress up game template
+    </title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/public/css/main.css">
+</head>
+
+<body>
+    
+<div id="dressupgame_container">
+    <div id="tab_container">
+        <div class="dressup_tab" id="tab_avatar"><span></span><span>Avatar</span></div> <!-- end tab -->
+        <div class="dressup_tab" id="tab_options"><span>Options</span></div> <!-- end tab -->
+        <div class="dressup_tab" id="tab_myrack"><span>myRack</span></div> <!-- end tab -->
+        <div class="dressup_tab" id="tab_mypicks"><span>myPicks</span></div> <!-- end tab -->
+    </div> <!-- end tab container -->
+    
+    <div id="searchbar"> <!--
+        <form class="navbar-form navbar-left">
+                        <input type="text" class="form-control" placeholder="search" />
+                        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+                    </form> -->
+        <!--navbar form-->
+                    
+                    <!-- input group nav -->
+                    <div class="input-group navbar-left">
+                        <input type="text" class="form-control" placeholder="search" />
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                    </div> 
+    </div>
+    
+    <div id="avatar_container">
+        <div id="avatar_box">
+            <div class="dug_header">Avatar</div>
+            <div id="avatar_overlaybox">
+                <span class="glyphicon glyphicon-king"></span><span class="glyphicon glyphicon-queen"></span>
+            </div>
+        </div> <!-- end avatar box -->
+        <div id="settings_box">
+            <div class="dug_header">Settings</div>
+            skin color, etc...don't really feel like filling this out.
+        </div> <!-- end settings box -->
+    </div> <!-- end avatar contaienr -->
+        
+            <div id="options_box" class="no_display">
+
+                <div class="dug_header"><span id="dug_breadcrumbs">Options</span>
+                    <div id="options_nav_bar">
+                        <ul id="options_nav" class="no_display">
+                            <li><a id="option_full_outfits">full outfits</a></li>
+                            <li><a id="option_one_piece">one piece</a></li>
+                            <li><a id="option_tops">tops</a></li>
+                            <li><a id="option_bottoms">bottoms</a></li>
+                            <li><a id="option_styles">styles</a></li>
+                        </ul> <!-- end option nav -->
+                        <ul id="fabric_nav" class="no_display">
+                            <li><a id="option_styles_fabric">fabric</a></li>
+                            <li><a id="option_styles_color">color</a></li>
+                            <li><a id="option_styles_shapes">shapes</a></li>
+                        </ul> <!-- end styles nav -->
+                        <span></span>
+                        <select id="options_nav_select">
+                            <option> -- Select One -- </option>
+                            <option>Full Outfits</option>
+                            <option>One Peice</option>
+                            <option>Tops</option>
+                            <option>Bottoms</option>
+                            <option>Styles -- Fabric</option>
+                            <option>Styles -- Color</option>
+                            <option>Styles -- Shapes</option>
+                        </select>
+                        <div id="options_styles_extra"></div>
+                    </div> <!-- end options nav bar div -->
+                </div> <!-- end section header -->
+                
+                <div id="options_selection_container">
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="selection_box">
+                        <div class="selection_header"><span>Selection</span><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="selection_img"></div>
+                    </div> <!-- end selection -->
+                    
+                </div> <!-- end options selections container -->
+                
+            </div> <!-- end options box -->
+            
+            <div id="myRack_box" class="no_display">
+                <div class="dug_header">My Rack</div>
+                
+                <div id="hanger_rack_container">
+                    <div class="hanged_selection">
+                        <div class="hanged_selection_header"><span>Hanger</span><span class="glyphicon glyphicon-remove"></span></div>
+                        <div class="hanged_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="hanged_selection">
+                        <div class="hanged_selection_header"><span>Hanger</span><span class="glyphicon glyphicon-remove"></span></div>
+                        <div class="hanged_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="hanged_selection">
+                        <div class="hanged_selection_header"><span>Hanger</span><span class="glyphicon glyphicon-remove"></span></div>
+                        <div class="hanged_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="hanged_selection">
+                        <div class="hanged_selection_header"><span>Hanger</span><span class="glyphicon glyphicon-remove"></span></div>
+                        <div class="hanged_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="hanged_selection">
+                        <div class="hanged_selection_header"><span>Hanger</span><span class="glyphicon glyphicon-remove"></span></div>
+                        <div class="hanged_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="hanged_selection">
+                        <div class="hanged_selection_header"><span>Hanger</span><span class="glyphicon glyphicon-remove"></span></div>
+                        <div class="hanged_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="hanged_selection">
+                        <div class="hanged_selection_header"><span>Hanger</span><span class="glyphicon glyphicon-remove"></span></div>
+                        <div class="hanged_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="hanged_selection">
+                        <div class="hanged_selection_header"><span>Hanger</span><span class="glyphicon glyphicon-remove"></span></div>
+                        <div class="hanged_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="hanged_selection">
+                        <div class="hanged_selection_header"><span>Hanger</span><span class="glyphicon glyphicon-remove"></span></div>
+                        <div class="hanged_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="hanged_selection">
+                        <div class="hanged_selection_header"><span>Hanger</span><span class="glyphicon glyphicon-remove"></span></div>
+                        <div class="hanged_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="hanged_selection">
+                        <div class="hanged_selection_header"><span>Hanger</span><span class="glyphicon glyphicon-remove"></span></div>
+                        <div class="hanged_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="hanged_selection">
+                        <div class="hanged_selection_header"><span>Hanger</span><span class="glyphicon glyphicon-remove"></span></div>
+                        <div class="hanged_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="hanged_selection">
+                        <div class="hanged_selection_header"><span>Hanger</span><span class="glyphicon glyphicon-remove"></span></div>
+                        <div class="hanged_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="hanged_selection">
+                        <div class="hanged_selection_header"><span>Hanger</span><span class="glyphicon glyphicon-remove"></span></div>
+                        <div class="hanged_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="hanged_selection">
+                        <div class="hanged_selection_header"><span>Hanger</span><span class="glyphicon glyphicon-remove"></span></div>
+                        <div class="hanged_img"></div>
+                    </div> <!-- end selection -->
+                    
+                    <div class="hanged_selection">
+                        <div class="hanged_selection_header"><span>Hanger</span><span class="glyphicon glyphicon-remove"></span></div>
+                        <div class="hanged_img"></div>
+                    </div> <!-- end selection -->
+                    
+                </div> <!-- rack contaienr -->
+                
+            </div> <!-- end myRack box -->
+        
+        <div id="myPicks_box" class="no_display">
+            <div class="dug_header">My Picks</div>
+            
+            <div id="mypicks_results_box">
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+                <div class="result_box">
+                    <div class="result_header"><span>Result</span><span class="glyphicon glyphicon-plus"></span></div>
+                    <div class="results_img"></div>
+                </div> <!-- end selection -->
+                
+            </div> <!-- mypicks results -->
+            
+        </div> <!-- end myPicks box -->
+</div> <!-- end dress up container -->
+    
+</body>
+<script src="/public/js/mobilemain.js"></script>
+</html>
