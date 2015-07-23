@@ -348,6 +348,61 @@ a:active {
     background-color: cornflowerblue;
     color: #fff; }
 
+#faq_container {
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px #ccc; }
+  @media all and (max-width: 480px) {
+    #faq_container {
+      width: 100%;
+      padding: 10px; } }
+  @media all and (min-width: 481px) and (max-width: 767px) {
+    #faq_container {
+      width: 600px;
+      padding: 10px; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    #faq_container {
+      width: 800px;
+      padding: 20px; } }
+  @media all and (min-width: 1024px) {
+    #faq_container {
+      width: 1000px;
+      padding: 30px; } }
+
+.question_li {
+  background-color: #ddd;
+  padding: 4px;
+  border-bottom: solid 2px #bbb; }
+  @media all and (max-width: 480px) {
+    .question_li {
+      width: 100%; } }
+  @media all and (min-width: 481px) and (max-width: 767px) {
+    .question_li {
+      width: 500px; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    .question_li {
+      width: 700px; } }
+  @media all and (min-width: 1024px) {
+    .question_li {
+      width: 900px; } }
+
+.answer_div {
+  background-color: #ddd;
+  border: solid 2px #bbb;
+  margin-bottom: 10px; }
+  @media all and (max-width: 480px) {
+    .answer_div {
+      width: 100%; } }
+  @media all and (min-width: 481px) and (max-width: 767px) {
+    .answer_div {
+      width: 500px; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    .answer_div {
+      width: 700px; } }
+  @media all and (min-width: 1024px) {
+    .answer_div {
+      width: 900px; } }
+
 #dressupgame_container {
   margin: 0px;
   padding: 0px;
