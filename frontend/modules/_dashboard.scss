@@ -1,0 +1,196 @@
+#dashboard_container {
+    position: relative;
+    
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 400px;
+    
+    //border: solid 1px #ccc;
+    background-color: #eee;
+    
+    @media all and (max-width: 480px) {
+        //phone
+        width: 100%;
+        //background-color: coral;
+        //background-color: #eee;
+    }
+    @media all and (min-width: 481px) and (max-width: 767px) {
+        //tablet
+        padding: 10px;
+        //background-color: crimson;
+        //background-color: #ddd;
+    }
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        //half screen desktop
+        width: 800px;
+        padding: 10px;
+        //background-color: cadetblue;
+        //background-color: #ccc;
+    }
+    @media all and (min-width: 1024px) {
+        //half screen desktop
+        width: 1050px;
+        //background-color: cornflowerblue;
+        //background-color: #bbb;
+    }
+}
+
+#dashboard_top_panel {
+    width: 100%;
+    min-height: 50px;
+    font-size: 16pt;
+    text-align: right;
+    
+    background-color: #ccc;
+    
+}
+
+#dashboard_left_panel {
+    display: inline-block;
+    text-align: center;
+    
+    position: fixed;
+    
+    //background-color: blueviolet;
+    
+    @media all and (max-width: 480px) {
+        //phone
+        
+        position: relative;
+        
+        width: 100%;
+        min-height: 40px;
+        padding: 5px;
+        ul {
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+        li {
+            display: block;
+            background-color: #ddd;
+            border-bottom: solid 1px #bbb;
+        }
+        border-bottom: solid 2px #000;
+    }
+    @media all and (min-width: 481px) and (max-width: 767px) {
+        //tablet
+        width: 150px;
+        ul {
+            width: 100%;
+        }
+        li {
+            display: block;
+        }
+        border-right: solid 2px #000;
+    }
+    @media all and (min-width: 768px) {
+        //half screen desktop
+        width: 150px;
+        ul {
+            width: 100%;
+        }
+        li {
+            display: block;
+        }
+        border-right: solid 2px #000;
+    }
+}
+
+#dashboard_right_panel {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    //background-color: chocolate;
+    //border-left: solid 2px #fff;
+    @media all and (max-width: 480px) {
+        //phone
+        position: relative;
+        width: 100%;
+        right: 0px;
+        top: 4px;
+        padding: 2px;
+    }
+    @media all and (min-width: 481px) and (max-width: 767px) {
+        //tablet
+        padding: 5px;
+        
+    }
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        //half screen desktop
+        padding: 5px;
+        min-width: 600px;
+    }
+    @media all and (min-width: 1024px) {
+        //half screen desktop
+        padding: 10px;
+        min-width: 800px;
+    }
+}
+
+.message_box {
+    @include border-radius(5px);
+    background-color: #fff;
+    margin: 5px;
+    min-height: 100px;
+    padding-left: 10px;
+    @media all and (max-width: 480px) {
+        //phone
+        margin: 2px;
+        width: 100%;
+    }
+    @media all and (min-width: 481px) and (max-width: 767px) {
+        //tablet
+        width: 400px;
+    }
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        //half screen desktop
+        width: 400px;
+    }
+    @media all and (min-width: 1024px) {
+        //half screen desktop
+        width: 600px;
+    }
+    
+    border: solid 2px cadetblue;
+    
+    .message_box_header {
+        width: 100%;
+        text-align: left;
+        font-size: 12pt;
+        padding-left: 5px;
+        background-color: cadetblue;
+
+        
+        @include border-radius(2px);
+        //background-color: #fff;
+    }
+}
+
+.notic_box {
+    @extend .message_box;
+    border: solid 2px crimson;
+    .message_box_header {
+        background-color: crimson;
+        color: #fff;
+    }
+}
+
+.pm_box {
+    @extend .message_box;
+    border: solid 2px coral;
+    .message_box_header {
+        background-color: coral;
+        color: #fff;
+    }
+}
+
+.update_box {
+    @extend .message_box;
+    border: solid 2px cornflowerblue;
+    .message_box_header {
+        background-color: cornflowerblue;
+        color: #fff;
+    }
+}

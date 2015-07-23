@@ -2,19 +2,33 @@ a,
 a:visited {
     text-decoration: none;
     text-transform: none;
+    color: grey;
 }
 
 a:hover,
 a:active {
     text-decoration: none;
     text-transform: none;
+    color: aliceblue;
 }
 
 .main_container {
-    position: relative;
-    margin-top: 100px;
-    padding: 100px;
-    color: blue;
+    //position: relative;
+    min-height: 400px;
+    //height: 100%;    
+    margin-top: 50px;
+    //background-color: red;
+    
+    ul {
+        list-style-type: none;
+    }
+    li {
+        display: block;
+    }
+}
+
+.faq_container{
+    //background-color: aqua;
 }
 
 .fake_button {

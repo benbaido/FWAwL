@@ -1,67 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        
-        <title>Dashboard</title>
-    </head>
-    <body>
-        <!-- start global navbar-->
-        <div class="navbar navbar-fixed-top navbar-inverse">
-            <div class="container-fluid"  id="navbar_container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#inside_nav">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <!-- start global navbar-->
+    <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container-fluid" id="navbar_container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#inside_nav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="index.html">Logo here</a>
+            </div>
+
+            <div class="nav-collapse navbar-responsive-collapse collapse" id="inside_nav">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+
+                </ul>
+                <!-- end links list -->
+
+                <form class="navbar-form navbar-left">
+                    <input type="text" class="form-control" placeholder="search" />
+                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>
                     </button>
-                    
-                    <a class="navbar-brand" href="/">Logo here</a>
-                </div>
-                
-                <div class="nav-collapse navbar-responsive-collapse collapse" id="inside_nav">
-                    <ul class="nav navbar-nav navbar-left">
-                        <li class="active">
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">Link1</a>
-                        </li>
-                        <li>
-                            <a href="#">Link2</a>
-                        </li>
-                        
-                    </ul> <!-- end links list -->
-                    
-                    <form class="navbar-form navbar-left">
-                        <input type="text" class="form-control" placeholder="search" />
-                        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
-                    </form><!--navbar form-->
-                    
-                    <!-- input group nav
+                </form>
+                <!--navbar form-->
+
+                <!-- input group nav
                     <div class="input-group navbar-left">
                         <input type="text" class="form-control" placeholder="search" />
                         <span class="input-group-btn">
                             <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
                         </span>
                     </div> -->
-                    
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a>
-                        </li>
-                    </ul><!-- end right pull-->
-                    
-                </div>
-                <!--end nav collapse-->
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a>
+                    </li>
+                </ul>
+                <!-- end right pull-->
+
             </div>
-        </div> <!-- end global navbar-->
+            <!--end nav collapse-->
+        </div>
+    </div>
+    <!-- end global navbar-->
+    <div class="main_container">
         <h1>Dashboard</h1>
         
-    </body>
+        <div id="dashboard_container">
+            <!--<p>This is the panel container</p>-->
+            <div id="dashboard_top_panel">
+                <p>Hello User!</p>
+            </div>
+            <div id="dashboard_left_panel">
+                <ul>
+                    <li><a href="#">Inbox</a>
+                    </li>
+                    <li><a href="#">Order History</a>
+                    </li>
+                    <li><a href="#">Store</a>
+                    </li>
+                    <li><a href="#">Inbox</a>
+                    </li>
+                    <li><a href="#">Saved Games</a>
+                    </li>
+                    <li><a href="dressupgame/dressupgame.html">Play Dress Up Game</a>
+                    </li>
+                    <li><a href="catalog.html">Browse Catalog</a>
+                    </li>
+                    <li><a href="culture.html">West African Culture</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="dashboard_right_panel">
+                <!--<p>This is the right panel</p>-->
+                
+                <div class="message_box">
+                    <div class="message_box_header">Message</div>
+                    <p>This is a plain message box</p>
+                </div>
+                
+                <div class="notic_box">
+                    <div class="message_box_header">Notice</div>
+                    <p>This is a message notic box</p>
+                </div>
+                <div class="pm_box">
+                    <div class="message_box_header">New Message!</div>
+                    <p>This is a message pm box</p>
+                </div>
+                <div class="update_box">
+                    <div class="message_box_header">Update!</div>
+                    <p>This is a message update box</p>
+                </div>
+                
+            </div>
+        </div>
+        
+        <ul><!-- 
+            <li><a href="dashboard.html">Dashboard</a>
+            </li>
+            <li><a href="catalog.html">Catalog</a>
+            </li>
+            <li><a href="culture.html">Culture</a>
+            </li> -->
+            <li><a href="faq.html">FAQ</a>
+            </li>
+            <li><a href="dressupgame/dressupgame.html">dress up game</a>
+            </li>
+            <li><a href="dressupgame/dressupgame_m.html">dress up game mobile</a>
+            </li>
+        </ul>
+    </div>
+    <!-- end main container -->
+
+</body>
+
 </html>

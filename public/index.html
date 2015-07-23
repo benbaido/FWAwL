@@ -1,8 +1,131 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <title>Home</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+        <title>Mobile homepage</title>
     </head>
     <body>
+        <!-- start global navbar-->
+        <div class="navbar navbar-fixed-top navbar-inverse">
+            <div class="container-fluid"  id="navbar_container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#inside_nav">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    <a class="navbar-brand" href="/">Logo here</a>
+                </div>
+                
+                <div class="nav-collapse navbar-responsive-collapse" id="inside_nav">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Link1</a>
+                        </li>
+                        <li>
+                            <a href="#">Link2</a>
+                        </li>
+                        
+                    </ul> <!-- end links list -->
+                    
+                    <form class="navbar-form navbar-left">
+                        <input type="text" class="form-control" placeholder="search" />
+                        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+                    </form><!--navbar form-->
+                    
+                    <!-- input group nav
+                    <div class="input-group navbar-left">
+                        <input type="text" class="form-control" placeholder="search" />
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                    </div> -->
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a>
+                        </li>
+                    </ul><!-- end right pull-->
+                    
+                </div>
+                <!--end nav collapse-->
+            </div>
+        </div> <!-- end global navbar-->
+        
+        <!-- end headerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr ugh this'll be deleted when I figure out if I want php mvc or angular-->
+        
+        <div id="index_container">
+            <!--
+            <div id="nav_container">
+                <div id="landing_container" class="panel">♦</div> <!--end landing container 
+                <div id="dressup_container" class="panel">♥</div> <!--end dressup container
+                <div id="catalog_container" class="panel">♣</div> <!--end ctalog container
+                <div id="culture_container" class="panel">♠</div> <!--end culture container
+            </div> <!-- end nav_container-->
+            
+            
+            <div id="landing_container" class="panel">
+                ♦
+            </div> <!--end landing container -->
+            
+            <div id="landing_expanded" class="expand_out">
+                <div id="landing_content" class="expand_content">
+                    <p>This is the landing slide</p>
+                    <div id="landing_dressup_game" class="fake_button">
+                        <p>Dress up game</p>
+                    </div>
+                    <div id="landing_slideshow">
+                    </div>
+                </div>
+                
+            </div> <!--end landing expanded -->
+            
+            
+            <div id="dressup_container" class="panel">
+                ♥
+            </div> <!--end dressup container -->
+            <div id="dressup_expanded" class="expand_out">
+                <div id="dressup_content" class="expand_content">
+                    <p>This is the dress up game slide</p>
+                    <a href="#"><div class="fake_button">Play!</div></a>
+                </div>
+            </div> <!--end dressup expanded -->
+            
+            
+            <div id="catalog_container" class="panel">
+                ♣
+            </div> <!--end ctalog container -->
+            <div id="catalog_expanded" class="expand_out">
+                <div id="catalog_content" class="expand_content">
+                    <p>This is the catalog slide</p>
+                    <a href="#"><div class="fake_button">Browse Catalog</div></a>
+                </div>
+            </div> <!--end catalog expanded -->
+            
+            
+            
+            <div id="culture_container" class="panel">
+                ♠
+            </div> <!--end culture container -->
+            <div id="culture_expanded" class="expand_out">
+                <div id="culture_content" class="expand_content">
+                    <p>This is the culture slide</p>
+                    <a href="#"><div class="fake_button">Go To the Culture Blog</div></a>
+                </div>
+            </div> <!--end culture expanded -->
+            
+        </div> <!--end main container -->
+        
     </body>
+    <script src="js/mobilehome.js"></script>
 </html>
