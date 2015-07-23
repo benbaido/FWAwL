@@ -389,7 +389,8 @@ a:active {
 .answer_div {
   background-color: #ddd;
   border: solid 2px #bbb;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  padding: 5px; }
   @media all and (max-width: 480px) {
     .answer_div {
       width: 100%; } }
