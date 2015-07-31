@@ -7,10 +7,56 @@ html, body {
 .navbar-inverse {
   background-color: #000; }
 
-.navbar form {
-  width: 50%;
-  float: left;
-  margin-right: 10px; }
+.navbar {
+  background-color: #000;
+  height: 60px;
+  vertical-align: middle; }
+  @media all and (max-width: 480px) {
+    .navbar {
+      height: 60px;
+      text-align: center; } }
+  @media all and (max-width: 767px) {
+    .navbar #inside_nav {
+      background-color: #000; } }
+  @media all and (max-width: 767px) {
+    .navbar ul {
+      width: 60%; } }
+  @media all and (max-width: 480px) {
+    .navbar li {
+      display: block; } }
+  .navbar .navbar-right {
+    margin: 0px;
+    padding: 0px; }
+    @media all and (min-width: 768px) and (max-width: 1075px) {
+      .navbar .navbar-right {
+        margin-top: -45px; } }
+  .navbar .fake_button {
+    background-color: #bbdefb;
+    border-left: solid 1px #448aff;
+    border-right: solid 1px #448aff;
+    border-top: solid 1px #448aff;
+    border-bottom: solid 4px #448aff; }
+    @media all and (max-width: 767px) {
+      .navbar .fake_button {
+        padding: 3px;
+        width: 100px;
+        font-size: 10pt; } }
+    @media all and (min-width: 768px) {
+      .navbar .fake_button {
+        padding: 5px;
+        width: 120px;
+        font-size: 12pt; } }
+  .navbar .fake_button:active {
+    border-top: solid 4px #448aff;
+    border-bottom: solid 1px #448aff; }
+  .navbar form {
+    width: 50%;
+    float: left;
+    margin-right: 10px; }
+  .navbar img {
+    padding: 0px;
+    margin: 0px;
+    margin-top: -10px; }
 
 a,
 a:visited {
@@ -26,7 +72,7 @@ a:active {
 
 .main_container {
   min-height: 400px;
-  margin-top: 50px; }
+  margin-top: 60px; }
   .main_container ul {
     list-style-type: none; }
   .main_container li {
@@ -404,64 +450,94 @@ a:active {
     .answer_div {
       width: 900px; } }
 
-#dressupgame_container {
-  margin: 0px;
-  padding: 0px;
-  width: 480px;
-  height: 100%;
+#catalog_container {
   position: relative;
-  overflow-x: hidden; }
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 400px;
+  background-color: #eee; }
+  @media all and (max-width: 480px) {
+    #catalog_container {
+      width: 100%;
+      background-color: coral;
+      margin: 0px; } }
+  @media all and (min-width: 481px) and (max-width: 767px) {
+    #catalog_container {
+      width: 100%;
+      padding: 10px;
+      background-color: crimson; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    #catalog_container {
+      width: 800px;
+      padding: 10px;
+      background-color: cadetblue; } }
+  @media all and (min-width: 1024px) {
+    #catalog_container {
+      width: 1050px;
+      background-color: cornflowerblue; } }
 
-#tab_container {
-  display: block;
-  min-width: 40px;
-  width: 10%;
-  height: 98%;
-  margin-top: 20px;
-  margin: 0px;
-  padding: 0px;
-  padding-right: 5px;
+#catalog_nav {
   position: fixed;
-  top: 40;
-  right: 0;
-  z-index: 20; }
-
-.dressup_tab {
-  display: block;
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  height: 25%;
-  text-align: right;
-  vertical-align: bottom;
-  cursor: pointer; }
-  .dressup_tab span {
-    margin: 0px;
+  background-color: aqua; }
+  #catalog_nav ul {
+    width: 100%;
     padding: 0px;
-    color: #DDD;
-    font-size: 18pt;
-    word-wrap: break-word; }
+    padding-left: 5px; }
+    #catalog_nav ul li {
+      width: 100%;
+      display: block; }
+      #catalog_nav ul li ul {
+        padding-left: 20px; }
+  @media all and (max-width: 480px) {
+    #catalog_nav {
+      position: relative;
+      width: 100%;
+      text-align: center; } }
+  @media all and (min-width: 481px) and (max-width: 767px) {
+    #catalog_nav {
+      width: 150px; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    #catalog_nav {
+      width: 200px; } }
+  @media all and (min-width: 1024px) {
+    #catalog_nav {
+      width: 200px;
+      margin-left: 20px; } }
 
-#tab_avatar {
-  background-color: blue; }
+.catalog_nav_header {
+  text-transform: uppercase;
+  font-weight: 600; }
 
-#tab_options {
-  background-color: red; }
+#dressupgame_container {
+  position: relative;
+  width: 80%;
+  margin: 10px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto; }
 
-#tab_myrack {
-  background-color: gold; }
+#avatar_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 25%; }
 
-#tab_mypicks {
-  background-color: green; }
+#option_container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: aliceblue;
+  display: inline-block;
+  width: 74%; }
 
 .dug_header {
-  background-color: #CCC;
-  width: 100%;
-  padding-bottom: 5px;
-  padding-top: 10px;
+  margin: 0px;
+  margin-bottom: 5px;
+  padding: 0px;
   padding-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  width: 100%;
+  background-color: #CCC; }
   .dug_header a, .dug_header a:visited {
     text-decoration: none;
     text-transform: none;
@@ -469,39 +545,45 @@ a:active {
   .dug_header a:hover, .dug_header a:active {
     text-decoration: none;
     text-transform: none; }
-  .dug_header #options_nav_select {
-    width: 80%;
-    height: 30px; }
-
-#avatar_container {
-  width: 90%;
-  margin: 0px;
-  margin-left: 10px;
-  margin-right: auto;
-  margin-top: 10px;
-  height: 96%; }
 
 #avatar_box {
+  display: block;
   background-color: #DDD;
-  height: 74%; }
+  margin-bottom: 5px;
+  min-height: 450px; }
 
 #avatar_overlaybox {
-  width: 25px;
-  height: 50px; }
+  position: absolute;
+  top: 25;
+  right: 1; }
   #avatar_overlaybox span {
-    padding: 10px; }
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    cursor: pointer; }
 
 #settings_box {
-  height: 20%;
+  display: block;
   background-color: #DDD;
-  margin: 0px;
-  padding: 0px; }
+  min-height: 160px; }
+
+#options_rack_container {
+  position: relative;
+  margin-bottom: 5px;
+  min-height: 400px; }
 
 #options_box {
-  width: 90%;
-  margin-left: 10px;
-  margin-right: auto;
-  background-color: #DDD; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 80%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #DDD;
+  max-height: 400px; }
 
 #options_nav_bar {
   text-align: justify; }
@@ -509,7 +591,7 @@ a:active {
 #options_nav {
   width: 100%;
   list-style-type: none;
-  padding: 0px;
+  padding: none;
   margin: 0px; }
   #options_nav li {
     display: inline-block;
@@ -517,6 +599,7 @@ a:active {
 
 #fabric_nav {
   width: 100%;
+  display: none;
   list-style-type: none;
   padding: none;
   margin: 0px; }
@@ -525,18 +608,21 @@ a:active {
     padding: 2px; }
 
 #options_selection_container {
-  width: 100%;
+  max-height: 350px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 80%;
   margin: 0px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 10px; }
 
 .selection_box, .result_box {
   display: inline-block;
-  width: 45%;
-  height: 20%;
+  width: 90px;
+  min-height: 90px;
   margin: 3px;
   outline: 1px solid #AAA;
   position: relative;
@@ -560,35 +646,51 @@ a:active {
   margin-right: auto; }
 
 #myRack_box {
-  width: 90%;
-  margin-left: 10px;
-  margin-right: auto;
-  background-color: #DDD; }
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 19%;
+  background-color: #DDD;
+  min-height: 400px;
+  overflow-x: hidden;
+  overflow-y: auto; }
 
 #hanger_rack_container {
+  max-height: 370px;
+  overflow-x: hidden;
+  overflow-y: auto;
   width: 100%;
+  margin: 0px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-left: 5px;
+  padding-right: 10px;
+  padding-bottom: 10px; }
 
 .hanged_selection {
   display: inline-block;
-  min-width: 150px;
-  width: 23.33333%;
-  height: 150px;
-  margin: 5px;
-  margin-left: 5px;
+  width: 90%;
+  min-height: 90px;
+  margin: 3px;
   outline: 1px solid #AAA;
   position: relative;
   background-color: #EEE;
   cursor: pointer; }
 
 #myPicks_box {
-  width: 90%;
-  margin-left: 10px;
-  margin-right: auto;
-  background-color: #DDD; }
+  display: block;
+  width: 100%;
+  background-color: #DDD;
+  min-height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-bottom: 20px; }
 
 #mypicks_results_box {
+  max-height: 190px;
+  overflow-x: hidden;
+  overflow-y: auto;
   width: 100%;
   margin: 0px;
   margin-left: auto;
@@ -614,3 +716,5 @@ body {
   transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
   transition-delay: 0.1s; }
+
+/*# sourceMappingURL=main.css.map */

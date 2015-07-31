@@ -1,0 +1,1 @@
+Images in d_images is sized for the default viewport (mobile device) for 320x470
