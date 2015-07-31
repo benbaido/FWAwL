@@ -659,13 +659,15 @@ a:active {
       top: 10px;
       width: 340px;
       margin-left: 5px;
-      display: block; } }
+      display: block;
+      display: none; } }
   @media all and (min-width: 481px) and (max-width: 767px) {
     #left_contaienr {
       top: 10px;
       width: 432px;
       margin-left: 30px;
-      display: block; } }
+      display: block;
+      display: none; } }
   @media all and (min-width: 768px) and (max-width: 1023px) {
     #left_contaienr {
       width: 260px; } }
@@ -733,8 +735,19 @@ a:active {
     #settings_content {
       height: 94%; } }
 
+#options_rack_container {
+  position: relative; }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    #options_rack_container {
+      height: 360px; } }
+  @media all and (min-width: 1024px) {
+    #options_rack_container {
+      height: 450px; } }
+
 #options_container {
   display: inline-block;
+  top: 0px;
+  left: 0px;
   background-color: #ff8a80; }
   @media all and (max-width: 480px) {
     #options_container {
@@ -742,18 +755,14 @@ a:active {
       min-height: 500px;
       display: block;
       margin-bottom: 10px;
-      position: absolute;
-      top: 0px;
-      left: -500px; } }
+      position: absolute; } }
   @media all and (min-width: 481px) and (max-width: 767px) {
     #options_container {
       width: 100%;
       min-height: 630px;
       display: block;
       margin-bottom: 10px;
-      position: absolute;
-      top: 0px;
-      left: -500px; } }
+      position: absolute; } }
   @media all and (min-width: 768px) and (max-width: 1023px) {
     #options_container {
       width: 490px;
@@ -770,13 +779,17 @@ a:active {
   padding: 5px; }
   @media all and (min-width: 768px) and (max-width: 1023px) {
     #options_content {
-      height: 92%; } }
+      height: 92%;
+      overflow-y: auto; } }
   @media all and (min-width: 1024px) {
     #options_content {
-      height: 94%; } }
+      height: 94%;
+      overflow-y: auto; } }
 
 #myrack_container {
   display: inline-block;
+  position: absolute;
+  top: 0px;
   background-color: #fefcb3; }
   @media all and (max-width: 480px) {
     #myrack_container {
@@ -784,8 +797,6 @@ a:active {
       min-height: 500px;
       display: block;
       margin-bottom: 10px;
-      position: absolute;
-      top: 0px;
       left: -500px; } }
   @media all and (min-width: 481px) and (max-width: 767px) {
     #myrack_container {
@@ -793,17 +804,17 @@ a:active {
       min-height: 630px;
       display: block;
       margin-bottom: 10px;
-      position: absolute;
-      top: 0px;
       left: -500px; } }
   @media all and (min-width: 768px) and (max-width: 1023px) {
     #myrack_container {
       width: 130px;
-      height: 360px; } }
+      height: 360px;
+      right: 0px; } }
   @media all and (min-width: 1024px) {
     #myrack_container {
       width: 170px;
-      height: 450px; } }
+      height: 450px;
+      right: 0px; } }
   #myrack_container .dug_container_header {
     background-color: #ffd740; }
 
@@ -812,14 +823,17 @@ a:active {
   padding: 5px; }
   @media all and (min-width: 768px) and (max-width: 1023px) {
     #myrack_content {
-      height: 92%; } }
+      height: 92%;
+      overflow-x: auto; } }
   @media all and (min-width: 1024px) {
     #myrack_content {
-      height: 94%; } }
+      height: 93%;
+      overflow-y: auto; } }
 
 #mypicks_container {
   display: block;
   margin-top: 10px;
+  margin-bottom: 20px;
   background-color: #ccff90; }
   @media all and (max-width: 480px) {
     #mypicks_container {
@@ -854,6 +868,12 @@ a:active {
   margin: 0px;
   padding: 5px;
   height: 94%; }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    #mypicks_content {
+      overflow-y: auto; } }
+  @media all and (min-width: 1024px) {
+    #mypicks_content {
+      overflow-y: auto; } }
 
 .dug_container_header {
   margin: 0px;

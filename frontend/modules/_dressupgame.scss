@@ -133,7 +133,7 @@
         margin-left: 5px;
         display: block;
         
-        //display: none;
+        display: none;
     }
     @media all and (min-width: 481px) and (max-width: 767px) {
         top: 10px;
@@ -142,7 +142,7 @@
         display: block;
         
         //left: -500px;
-        //display: none;
+        display: none;
     }
     @media all and (min-width: 768px) and (max-width: 1023px) {
         width: 260px;
@@ -268,8 +268,27 @@
     }
 }
 
+#options_rack_container {
+    position: relative;
+    
+    @media all and (max-width: 480px) {
+        //left: -500px;
+    }
+    @media all and (min-width: 481px) and (max-width: 767px) {
+        //left: -500px;
+    }
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        height: 360px;
+    }
+    @media all and (min-width: 1024px) {
+        height: 450px;
+    }
+}
+
 #options_container {
     display: inline-block;
+    top: 0px;
+    left: 0px;
     
     background-color: $dressup-light-color;
     @media all and (max-width: 480px) {
@@ -279,8 +298,8 @@
         margin-bottom: 10px;
         
         position: absolute;
-        top: 0px;
-        left: -500px;
+        //top: 0px;
+        //left: -500px;
     }
     @media all and (min-width: 481px) and (max-width: 767px) {
         width: 100%;
@@ -289,8 +308,8 @@
         margin-bottom: 10px;
         
         position: absolute;
-        top: 0px;
-        left: -500px;
+        //top: 0px;
+        //left: -500px;
     }
     @media all and (min-width: 768px) and (max-width: 1023px) {
         width: 490px;
@@ -318,25 +337,30 @@
     }
     @media all and (min-width: 768px) and (max-width: 1023px) {
         height: 92%;
+        overflow-y: auto;
     }
     @media all and (min-width: 1024px) {
         height: 94%;
+        overflow-y: auto;
     }
     
 }
 
 #myrack_container {
     display: inline-block;
+    position: absolute;
+    top: 0px;
     
     background-color: $catalog-light-color;
+    
     @media all and (max-width: 480px) {
         width: 100%;
         min-height: 500px;
         display: block;
         margin-bottom: 10px;
         
-        position: absolute;
-        top: 0px;
+        //position: absolute;
+        //top: 0px;
         left: -500px;
     }
     @media all and (min-width: 481px) and (max-width: 767px) {
@@ -345,17 +369,21 @@
         display: block;
         margin-bottom: 10px;
         
-        position: absolute;
-        top: 0px;
+        //position: absolute;
+        //top: 0px;
         left: -500px;
     }
     @media all and (min-width: 768px) and (max-width: 1023px) {
+        //top: 0px;
         width: 130px;
         height: 360px;
+        right: 0px;
     }
     @media all and (min-width: 1024px) {
+        //top: 0px;
         width: 170px;
         height: 450px;
+        right: 0px;
     }
     
     .dug_container_header {
@@ -375,9 +403,11 @@
     }
     @media all and (min-width: 768px) and (max-width: 1023px) {
         height: 92%;
+        overflow-x: auto;
     }
     @media all and (min-width: 1024px) {
-        height: 94%;
+        height: 93%;
+        overflow-y: auto;
     }
 }
 
@@ -385,6 +415,8 @@
     display: block;
     
     margin-top: 10px;
+    margin-bottom: 20px;
+    
     background-color: $culture-light-color;
     @media all and (max-width: 480px) {
         width: 100%;
@@ -410,9 +442,11 @@
     }
     @media all and (min-width: 768px) and (max-width: 1023px) {
         min-height: 300px;
+        //max-height: 480px;
     }
     @media all and (min-width: 1024px) {
         min-height: 200px;
+        //max-height: 380px;
     }
     
     .dug_container_header {
@@ -432,10 +466,11 @@
         
     }
     @media all and (min-width: 768px) and (max-width: 1023px) {
-        
+        overflow-y: auto;
     }
     @media all and (min-width: 1024px) {
-        
+        //height: 94%;
+        overflow-y: auto;
     }
 }
 
