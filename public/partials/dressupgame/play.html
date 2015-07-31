@@ -1,0 +1,111 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Dress up game
+    </title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+
+<body>
+<!-- start global navbar-->
+        <div class="navbar navbar-fixed-top navbar-inverse">
+            <div class="container-fluid"  id="navbar_container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#inside_nav">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    <a class="navbar-brand" href="../index.html"><img alt="From West Africa with Love" src="../../img/logos/logo03_huge_200.png" /></a>
+                </div>
+                
+                <div class="nav-collapse navbar-responsive-collapse" id="inside_nav">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <a href="../catalog.html">Catalog</a>
+                        </li>
+                        <li>
+                            <a href="play.html">Play!</a>
+                        </li>
+                        <!--<li>
+                            <a href="#">Culture</a>
+                        </li>-->
+                        <li>
+                            <a href="../faq.html">FAQ</a>
+                        </li>
+                        
+                    </ul> <!-- end links list -->
+                    <form class="navbar-form navbar-left">
+                        <input type="text" class="form-control" placeholder="search" />
+                        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+                    </form><!--navbar form-->
+                    
+                    <!-- input group nav
+                    <div class="input-group navbar-left">
+                        <input type="text" class="form-control" placeholder="search" />
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                    </div> -->
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#"><span class="fake_button">Login</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../../img/icons/icon-basket_40x40.png" alt="shopping basket" /></a>
+                        </li>
+                    </ul><!-- end right pull-->
+                    
+                </div>
+                <!--end nav collapse-->
+            </div>
+        </div> <!-- end global navbar-->
+    
+    <div class="main_container">
+        <!--<h1>Play!</h1>-->
+        <div id="game_container">
+            
+            <div id="dug_tab_container">
+                <div class="dressup_tab" id="tab_avatar"><span>Avatar</span></div>
+                <div class="dressup_tab" id="tab_options"><span>Options</span></div>
+                <div class="dressup_tab" id="tab_myrack"><span>myRack</span></div>
+                <div class="dressup_tab" id="tab_mypicks"><span>myPicks</span></div>
+            </div>
+            
+            <div id="left_contaienr">
+                <div id="avatar_container">
+                    <div class="dug_container_header">Avatar</div>
+                    <div id="avatar_content"></div>
+                </div> <!-- end avatar container -->
+                <div id="settings_container">
+                    <div class="dug_container_header">Settings</div>
+                    <div id="settings_content"></div>
+                </div> <!-- end settings container -->
+            </div> <!-- end left container -->
+            <div id="right_container">
+                <div id="options_container">
+                    <div class="dug_container_header">Options</div>
+                    <div id="options_content"></div>
+                </div> <!-- end options container -->
+                <div id="myrack_container">
+                    <div class="dug_container_header">My Rack</div>
+                    <div id="myrack_content"></div>
+                </div> <!-- end myrack container -->
+                <div id="mypicks_container">
+                    <div class="dug_container_header">My Picks</div>
+                    <div id="mypicks_content"></div>
+                </div> <!-- end mypicks container -->
+            </div> <!-- end right container -->
+        </div>
+    </div>
+
+</body>
+    <script src="../js/nav.js"></script>
+</html>

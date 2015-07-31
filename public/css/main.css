@@ -103,6 +103,32 @@ a:active {
       width: 200px;
       font-size: 14pt; } }
 
+.selection_box, .result_box {
+  display: inline-block;
+  width: 90px;
+  min-height: 90px;
+  margin: 3px;
+  outline: 1px solid #AAA;
+  position: relative;
+  background-color: #EEE;
+  cursor: pointer; }
+
+.selection_header, .result_header, .hanged_selection_header {
+  border-bottom: 1px solid #AAA; }
+  .selection_header span, .result_header span, .hanged_selection_header span {
+    padding: 0px;
+    margin: 0px;
+    padding-left: 2px; }
+  .selection_header .glyphicon, .result_header .glyphicon, .hanged_selection_header .glyphicon {
+    position: absolute;
+    right: 0; }
+
+.selection_img, .results_img, .hanged_img {
+  padding: 0px;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto; }
+
 .no_display {
   display: none; }
 
@@ -539,196 +565,311 @@ a:active {
     #catalog_content {
       padding: 10px; } }
 
-#dressupgame_container {
+#game_container {
   position: relative;
-  width: 80%;
-  margin: 10px;
-  padding: 0px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  min-height: 400px; }
+  @media all and (max-width: 480px) {
+    #game_container {
+      width: 100%; } }
+  @media all and (min-width: 481px) and (max-width: 767px) {
+    #game_container {
+      padding: 10px; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    #game_container {
+      width: 900px;
+      padding: 10px; } }
+  @media all and (min-width: 1024px) {
+    #game_container {
+      width: 1200px; } }
+
+#dug_tab_container {
+  z-index: 20;
+  color: #fff;
+  position: fixed;
+  top: 200px;
+  right: 0px;
+  display: block;
+  margin: 0px;
+  width: 100px;
+  height: 100px;
+  padding: 0px; }
+  @media all and (max-width: 480px) {
+    #dug_tab_container {
+      top: 100px;
+      width: 50px; } }
+  @media all and (min-width: 481px) and (max-width: 767px) {
+    #dug_tab_container {
+      /*position: fixed;
+      top: 200px;
+      right: 0px;
+      display: block;
+      margin: 0px;
+      //margin-left: auto;
+      //margin-right: auto;
+      width: 100px;
+      height: 100px;
+      
+      padding: 0px;*/ } }
+  @media all and (min-width: 768px) {
+    #dug_tab_container {
+      display: none; } }
+
+.dressup_tab {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-size: 14pt;
+  cursor: pointer; }
+  @media all and (min-width: 481px) and (max-width: 767px) {
+    .dressup_tab {
+      /*display: block;
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      
+      text-align: center;
+      font-size: 14pt;
+      font-size-adjust: auto;*/ } }
+
+#tab_avatar {
+  background-color: #82b1ff; }
+
+#tab_options {
+  background-color: #ff5252; }
+
+#tab_myrack {
+  background-color: #ffe57f; }
+
+#tab_mypicks {
+  background-color: #b2ff59; }
+
+#left_contaienr {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  display: inline-block; }
+  @media all and (max-width: 480px) {
+    #left_contaienr {
+      top: 10px;
+      width: 340px;
+      margin-left: 5px;
+      display: block; } }
+  @media all and (min-width: 481px) and (max-width: 767px) {
+    #left_contaienr {
+      top: 10px;
+      width: 432px;
+      margin-left: 30px;
+      display: block; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    #left_contaienr {
+      width: 260px; } }
+  @media all and (min-width: 1024px) {
+    #left_contaienr {
+      width: 300px; } }
+
+#right_container {
+  position: absolute;
+  top: 50px;
+  display: inline-block; }
+  @media all and (max-width: 480px) {
+    #right_container {
+      top: 10px;
+      width: 340px;
+      left: 0px;
+      margin-left: 5px; } }
+  @media all and (min-width: 481px) and (max-width: 767px) {
+    #right_container {
+      top: 10px;
+      width: 432px;
+      left: 0px;
+      margin-left: 30px; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    #right_container {
+      right: 0px;
+      width: 630px;
+      min-height: 550px; } }
+  @media all and (min-width: 1024px) {
+    #right_container {
+      right: 0px;
+      width: 880px;
+      min-height: 640px; } }
 
 #avatar_container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  width: 25%; }
+  display: block;
+  height: 500px;
+  background-color: #bbdefb; }
+  #avatar_container .dug_container_header {
+    background-color: #448aff; }
 
-#option_container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: aliceblue;
-  display: inline-block;
-  width: 74%; }
+#avatar_content {
+  margin: 0px;
+  padding: 5px;
+  height: 94%; }
 
-.dug_header {
+#settings_container {
+  display: block;
+  margin-top: 10px;
+  height: 130px;
+  background-color: #bbdefb; }
+  #settings_container .dug_container_header {
+    background-color: #448aff; }
+
+#settings_content {
+  margin: 0px;
+  padding: 5px; }
+  @media all and (min-width: 481px) and (max-width: 767px) {
+    #settings_content {
+      height: 80%; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    #settings_content {
+      height: 80%; } }
+  @media all and (min-width: 1024px) {
+    #settings_content {
+      height: 94%; } }
+
+#options_container {
+  display: inline-block;
+  background-color: #ff8a80; }
+  @media all and (max-width: 480px) {
+    #options_container {
+      width: 100%;
+      min-height: 500px;
+      display: block;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 0px;
+      left: -500px; } }
+  @media all and (min-width: 481px) and (max-width: 767px) {
+    #options_container {
+      width: 100%;
+      min-height: 630px;
+      display: block;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 0px;
+      left: -500px; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    #options_container {
+      width: 490px;
+      height: 360px; } }
+  @media all and (min-width: 1024px) {
+    #options_container {
+      width: 700px;
+      height: 450px; } }
+  #options_container .dug_container_header {
+    background-color: #ff1744; }
+
+#options_content {
+  margin: 0px;
+  padding: 5px; }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    #options_content {
+      height: 92%; } }
+  @media all and (min-width: 1024px) {
+    #options_content {
+      height: 94%; } }
+
+#myrack_container {
+  display: inline-block;
+  background-color: #fefcb3; }
+  @media all and (max-width: 480px) {
+    #myrack_container {
+      width: 100%;
+      min-height: 500px;
+      display: block;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 0px;
+      left: -500px; } }
+  @media all and (min-width: 481px) and (max-width: 767px) {
+    #myrack_container {
+      width: 100%;
+      min-height: 630px;
+      display: block;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 0px;
+      left: -500px; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    #myrack_container {
+      width: 130px;
+      height: 360px; } }
+  @media all and (min-width: 1024px) {
+    #myrack_container {
+      width: 170px;
+      height: 450px; } }
+  #myrack_container .dug_container_header {
+    background-color: #ffd740; }
+
+#myrack_content {
+  margin: 0px;
+  padding: 5px; }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    #myrack_content {
+      height: 92%; } }
+  @media all and (min-width: 1024px) {
+    #myrack_content {
+      height: 94%; } }
+
+#mypicks_container {
+  display: block;
+  margin-top: 10px;
+  background-color: #ccff90; }
+  @media all and (max-width: 480px) {
+    #mypicks_container {
+      width: 100%;
+      min-height: 500px;
+      display: block;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 0px;
+      left: -500px; } }
+  @media all and (min-width: 481px) and (max-width: 767px) {
+    #mypicks_container {
+      width: 100%;
+      min-height: 630px;
+      display: block;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 0px;
+      left: -500px; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    #mypicks_container {
+      min-height: 300px; } }
+  @media all and (min-width: 1024px) {
+    #mypicks_container {
+      min-height: 200px; } }
+  #mypicks_container .dug_container_header {
+    background-color: #7cb342; }
+
+#mypicks_content {
+  margin: 0px;
+  padding: 5px;
+  height: 94%; }
+
+.dug_container_header {
   margin: 0px;
   margin-bottom: 5px;
   padding: 0px;
   padding-left: 10px;
+  color: #fff;
   width: 100%;
   background-color: #CCC; }
-  .dug_header a, .dug_header a:visited {
+  .dug_container_header a, .dug_container_header a:visited {
     text-decoration: none;
     text-transform: none;
     cursor: pointer; }
-  .dug_header a:hover, .dug_header a:active {
+  .dug_container_header a:hover, .dug_container_header a:active {
     text-decoration: none;
     text-transform: none; }
-
-#avatar_box {
-  display: block;
-  background-color: #DDD;
-  margin-bottom: 5px;
-  min-height: 450px; }
-
-#avatar_overlaybox {
-  position: absolute;
-  top: 25;
-  right: 1; }
-  #avatar_overlaybox span {
-    width: 25px;
-    height: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    cursor: pointer; }
-
-#settings_box {
-  display: block;
-  background-color: #DDD;
-  min-height: 160px; }
-
-#options_rack_container {
-  position: relative;
-  margin-bottom: 5px;
-  min-height: 400px; }
-
-#options_box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  width: 80%;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  background-color: #DDD;
-  max-height: 400px; }
-
-#options_nav_bar {
-  text-align: justify; }
-
-#options_nav {
-  width: 100%;
-  list-style-type: none;
-  padding: none;
-  margin: 0px; }
-  #options_nav li {
-    display: inline-block;
-    padding: 2px; }
-
-#fabric_nav {
-  width: 100%;
-  display: none;
-  list-style-type: none;
-  padding: none;
-  margin: 0px; }
-  #fabric_nav li {
-    display: inline-block;
-    padding: 2px; }
-
-#options_selection_container {
-  max-height: 350px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  width: 80%;
-  margin: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 10px; }
-
-.selection_box, .result_box {
-  display: inline-block;
-  width: 90px;
-  min-height: 90px;
-  margin: 3px;
-  outline: 1px solid #AAA;
-  position: relative;
-  background-color: #EEE;
-  cursor: pointer; }
-
-.selection_header, .result_header, .hanged_selection_header {
-  border-bottom: 1px solid #AAA; }
-  .selection_header span, .result_header span, .hanged_selection_header span {
-    padding: 0px;
-    margin: 0px;
-    padding-left: 2px; }
-  .selection_header .glyphicon, .result_header .glyphicon, .hanged_selection_header .glyphicon {
-    position: absolute;
-    right: 0; }
-
-.selection_img, .results_img, .hanged_img {
-  padding: 0px;
-  margin: 0px;
-  margin-left: auto;
-  margin-right: auto; }
-
-#myRack_box {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: inline-block;
-  width: 19%;
-  background-color: #DDD;
-  min-height: 400px;
-  overflow-x: hidden;
-  overflow-y: auto; }
-
-#hanger_rack_container {
-  max-height: 370px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  width: 100%;
-  margin: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 5px;
-  padding-right: 10px;
-  padding-bottom: 10px; }
-
-.hanged_selection {
-  display: inline-block;
-  width: 90%;
-  min-height: 90px;
-  margin: 3px;
-  outline: 1px solid #AAA;
-  position: relative;
-  background-color: #EEE;
-  cursor: pointer; }
-
-#myPicks_box {
-  display: block;
-  width: 100%;
-  background-color: #DDD;
-  min-height: 200px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  margin-bottom: 20px; }
-
-#mypicks_results_box {
-  max-height: 190px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  width: 100%;
-  margin: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 10px; }
 
 body {
   -webkit-transition-property: all;

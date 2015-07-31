@@ -1,0 +1,257 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%; }
+
+/* underscore tells sass that these are partial files. not meant to be compiled */
+a,
+a:visited {
+  text-decoration: none;
+  text-transform: none;
+  color: grey; }
+
+a:hover,
+a:active {
+  text-decoration: none;
+  text-transform: none;
+  color: aliceblue; }
+
+.main_container {
+  min-height: 400px;
+  margin-top: 60px; }
+  .main_container ul {
+    list-style-type: none; }
+  .main_container li {
+    display: block; }
+
+.fake_button {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
+  @media all and (max-width: 767px) {
+    .fake_button {
+      padding: 8px;
+      width: 120px;
+      font-size: 12pt; } }
+  @media all and (min-width: 768px) {
+    .fake_button {
+      padding: 10px;
+      width: 200px;
+      font-size: 14pt; } }
+
+#dressupgame_container {
+  position: relative;
+  width: 80%;
+  margin: 10px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto; }
+
+#avatar_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 25%; }
+
+#option_container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: aliceblue;
+  display: inline-block;
+  width: 74%; }
+
+.dug_header {
+  margin: 0px;
+  margin-bottom: 5px;
+  padding: 0px;
+  padding-left: 10px;
+  width: 100%;
+  background-color: #CCC; }
+  .dug_header a, .dug_header a:visited {
+    text-decoration: none;
+    text-transform: none;
+    cursor: pointer; }
+  .dug_header a:hover, .dug_header a:active {
+    text-decoration: none;
+    text-transform: none; }
+
+#avatar_box {
+  display: block;
+  background-color: #DDD;
+  margin-bottom: 5px;
+  min-height: 450px; }
+
+#avatar_overlaybox {
+  position: absolute;
+  top: 25;
+  right: 1; }
+  #avatar_overlaybox span {
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    cursor: pointer; }
+
+#settings_box {
+  display: block;
+  background-color: #DDD;
+  min-height: 160px; }
+
+#options_rack_container {
+  position: relative;
+  margin-bottom: 5px;
+  min-height: 400px; }
+
+#options_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 80%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #DDD;
+  max-height: 400px; }
+
+#options_nav_bar {
+  text-align: justify; }
+
+#options_nav {
+  width: 100%;
+  list-style-type: none;
+  padding: none;
+  margin: 0px; }
+  #options_nav li {
+    display: inline-block;
+    padding: 2px; }
+
+#fabric_nav {
+  width: 100%;
+  display: none;
+  list-style-type: none;
+  padding: none;
+  margin: 0px; }
+  #fabric_nav li {
+    display: inline-block;
+    padding: 2px; }
+
+#options_selection_container {
+  max-height: 350px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 80%;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px; }
+
+.selection_box, .result_box {
+  display: inline-block;
+  width: 90px;
+  min-height: 90px;
+  margin: 3px;
+  outline: 1px solid #AAA;
+  position: relative;
+  background-color: #EEE;
+  cursor: pointer; }
+
+.selection_header, .result_header, .hanged_selection_header {
+  border-bottom: 1px solid #AAA; }
+  .selection_header span, .result_header span, .hanged_selection_header span {
+    padding: 0px;
+    margin: 0px;
+    padding-left: 2px; }
+  .selection_header .glyphicon, .result_header .glyphicon, .hanged_selection_header .glyphicon {
+    position: absolute;
+    right: 0; }
+
+.selection_img, .results_img, .hanged_img {
+  padding: 0px;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto; }
+
+#myRack_box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 19%;
+  background-color: #DDD;
+  min-height: 400px;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+#hanger_rack_container {
+  max-height: 370px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  padding-right: 10px;
+  padding-bottom: 10px; }
+
+.hanged_selection {
+  display: inline-block;
+  width: 90%;
+  min-height: 90px;
+  margin: 3px;
+  outline: 1px solid #AAA;
+  position: relative;
+  background-color: #EEE;
+  cursor: pointer; }
+
+#myPicks_box {
+  display: block;
+  width: 100%;
+  background-color: #DDD;
+  min-height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-bottom: 20px; }
+
+#mypicks_results_box {
+  max-height: 190px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px; }
+
+body {
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.6s;
+  -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-property: all;
+  -moz-transition-duration: 0.6s;
+  -moz-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition-delay: 0.1s;
+  -o-transition-property: all;
+  -o-transition-duration: 0.6s;
+  -o-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition-delay: 0.1s;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-delay: 0.1s; }
+
+/*# sourceMappingURL=dugtemp.css.map */
