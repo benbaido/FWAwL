@@ -18,16 +18,20 @@ html, body {
   @media all and (max-width: 767px) {
     .navbar #inside_nav {
       background-color: #000; } }
-  @media all and (max-width: 767px) {
-    .navbar ul {
-      width: 60%; } }
-  @media all and (max-width: 480px) {
-    .navbar li {
-      display: block; } }
+  .navbar ul {
+    padding: 0px; }
+    @media all and (max-width: 767px) {
+      .navbar ul {
+        width: 60%; } }
+  .navbar li {
+    padding: 0px; }
+    @media all and (max-width: 480px) {
+      .navbar li {
+        display: block; } }
   .navbar .navbar-right {
     margin: 0px;
     padding: 0px; }
-    @media all and (min-width: 768px) and (max-width: 1075px) {
+    @media all and (min-width: 768px) and (max-width: 1449px) {
       .navbar .navbar-right {
         margin-top: -45px; } }
   .navbar .fake_button {
@@ -258,7 +262,7 @@ a:active {
   margin-left: auto;
   margin-right: auto;
   min-height: 400px;
-  background-color: #eee; }
+  background-color: #bbdefb; }
   @media all and (max-width: 480px) {
     #dashboard_container {
       width: 100%; } }
@@ -278,7 +282,8 @@ a:active {
   min-height: 50px;
   font-size: 16pt;
   text-align: right;
-  background-color: #ccc; }
+  padding-right: 30px;
+  background-color: #82b1ff; }
 
 #dashboard_left_panel {
   display: inline-block;
@@ -450,35 +455,30 @@ a:active {
     .answer_div {
       width: 900px; } }
 
-#catalog_container {
+#catalog_page_container {
+  background-color: #fefcb3;
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  min-height: 400px;
-  background-color: #eee; }
+  min-height: 400px; }
   @media all and (max-width: 480px) {
-    #catalog_container {
+    #catalog_page_container {
       width: 100%;
-      background-color: coral;
       margin: 0px; } }
   @media all and (min-width: 481px) and (max-width: 767px) {
-    #catalog_container {
+    #catalog_page_container {
       width: 100%;
-      padding: 10px;
-      background-color: crimson; } }
+      padding: 10px; } }
   @media all and (min-width: 768px) and (max-width: 1023px) {
-    #catalog_container {
+    #catalog_page_container {
       width: 800px;
-      padding: 10px;
-      background-color: cadetblue; } }
+      padding: 10px; } }
   @media all and (min-width: 1024px) {
-    #catalog_container {
-      width: 1050px;
-      background-color: cornflowerblue; } }
+    #catalog_page_container {
+      width: 1050px; } }
 
 #catalog_nav {
-  position: fixed;
-  background-color: aqua; }
+  position: fixed; }
   #catalog_nav ul {
     width: 100%;
     padding: 0px;
@@ -507,6 +507,37 @@ a:active {
 .catalog_nav_header {
   text-transform: uppercase;
   font-weight: 600; }
+
+#catalog_display {
+  border-left: solid 1px #000;
+  position: absolute;
+  top: 5px;
+  right: 1px;
+  min-height: 500px; }
+  @media all and (max-width: 480px) {
+    #catalog_display {
+      top: 210px;
+      width: 100%;
+      min-height: 400px; } }
+  @media all and (min-width: 481px) and (max-width: 767px) {
+    #catalog_display {
+      width: 400px;
+      position: relative;
+      margin-left: 160px; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    #catalog_display {
+      width: 700px; } }
+  @media all and (min-width: 1024px) {
+    #catalog_display {
+      width: 850px; } }
+
+#catalog_content {
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media all and (max-width: 480px) {
+    #catalog_content {
+      padding: 10px; } }
 
 #dressupgame_container {
   position: relative;

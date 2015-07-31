@@ -6,7 +6,7 @@
     min-height: 400px;
     
     //border: solid 1px #ccc;
-    background-color: #eee;
+    background-color: $landing-light-color;
     
     @media all and (max-width: 480px) {
         //phone
@@ -41,7 +41,9 @@
     font-size: 16pt;
     text-align: right;
     
-    background-color: #ccc;
+    padding-right: 30px;
+    
+    background-color: $landing-base-color;
     
 }
 
