@@ -127,26 +127,39 @@
     position: absolute;
     z-index: 20;
     
-    top: 10px;
-    right: 0px;
     //width: 100px;
     
-    display: block;
+    display: flex;
     background-color: $culture-dark-color;
+    
+    @include border-radius(50px);
     @include box-shadow(0px, 3px, 3px, #607c42);
     color: #fff;
+    
+    justify-content: center;
+    align-items: center;
+    
+    //line-height: 2;
+    //vertical-align: middle;
     
     @media all and (max-width: 767px) {
     //phone
         padding: 8px;
-        width: 100px;
-        font-size: 8pt;
+        width: 150px;
+        height: 50px;
+        font-size: 12pt;
+        
+        top: 560px;
+        right: 10px;
     }
     @media all and (min-width: 768px) {
             //tablet
         padding: 10px;
         width: 100px;
         font-size: 10pt;
+        
+        top: 10px;
+        right: 0px;
     }
 }
 
@@ -652,7 +665,9 @@
     
     @include border-radius(50px);
     
-    background-color: chocolate;
+    //background-color: chocolate;
+    
+    cursor: pointer;
 }
 
 #skin_tone_1 {

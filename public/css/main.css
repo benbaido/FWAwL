@@ -53,9 +53,12 @@ html, body {
     border-top: solid 4px #448aff;
     border-bottom: solid 1px #448aff; }
   .navbar form {
-    width: 50%;
+    width: 250px;
     float: left;
     margin-right: 10px; }
+    .navbar form input {
+      width: 100px;
+      padding: 2px; }
   .navbar img {
     padding: 0px;
     margin: 0px;
@@ -125,7 +128,12 @@ a:active {
   outline: 1px solid #AAA;
   position: relative;
   background-color: #fff;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 6px #aaa;
+  -moz-box-shadow: 0px 0px 6px #aaa;
+  -ms-box-shadow: 0px 0px 6px #aaa;
+  -o-box-shadow: 0px 0px 6px #aaa;
+  box-shadow: 0px 0px 6px #aaa; }
 
 .selection_header {
   text-align: center;
@@ -499,7 +507,6 @@ a:active {
       width: 900px; } }
 
 #catalog_page_container {
-  background-color: #fefcb3;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -528,7 +535,8 @@ a:active {
     padding-left: 5px; }
     #catalog_nav ul li {
       width: 100%;
-      display: block; }
+      display: block;
+      cursor: pointer; }
       #catalog_nav ul li ul {
         padding-left: 20px; }
   @media all and (max-width: 480px) {
@@ -669,26 +677,36 @@ a:active {
 #checkoutnow_btn {
   position: absolute;
   z-index: 20;
-  top: 10px;
-  right: 0px;
-  display: block;
+  display: flex;
   background-color: #7cb342;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
   -webkit-box-shadow: 0px 3px 3px #607c42;
   -moz-box-shadow: 0px 3px 3px #607c42;
   -ms-box-shadow: 0px 3px 3px #607c42;
   -o-box-shadow: 0px 3px 3px #607c42;
   box-shadow: 0px 3px 3px #607c42;
-  color: #fff; }
+  color: #fff;
+  justify-content: center;
+  align-items: center; }
   @media all and (max-width: 767px) {
     #checkoutnow_btn {
       padding: 8px;
-      width: 100px;
-      font-size: 8pt; } }
+      width: 150px;
+      height: 50px;
+      font-size: 12pt;
+      top: 560px;
+      right: 10px; } }
   @media all and (min-width: 768px) {
     #checkoutnow_btn {
       padding: 10px;
       width: 100px;
-      font-size: 10pt; } }
+      font-size: 10pt;
+      top: 10px;
+      right: 0px; } }
 
 .dug_container_header {
   margin: 0px;
@@ -997,7 +1015,7 @@ a:active {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px;
-  background-color: chocolate; }
+  cursor: pointer; }
 
 #skin_tone_1 {
   background-color: #FAE7D0; }

@@ -1,6 +1,6 @@
 #catalog_page_container{
     
-    background-color: $catalog-light-color;
+    //background-color: $catalog-light-color;
     
     position: relative;
     
@@ -53,6 +53,7 @@
         li{
             width: 100%;
             display: block;
+            cursor: pointer;
             
             ul {
                 padding-left: 20px;

@@ -454,9 +454,12 @@ $(document).ready(function(){
             //console.log('clothes count: ' + clothes_count);
             
             var imglink = '';
+            var title = '';
             //console.log('this (inside): ' + $(this));
             //console.log('this parent: ' + $(this).parent('.selection_box'));
             imglink = $(this).parents('.selection_box').find('.selection_img img').attr('src');
+            title = $(this).siblings('.selection_title:first').val()//.attr('content');
+            console.log('title: '+ title);
             //imglink = $(this).parent('.selection_box img').attr('src');
             
             /*
@@ -482,12 +485,18 @@ $(document).ready(function(){
             
             //console.log('imglink: ' + imglink);
             
-            $('#myrack_content').append('<div class="selection_box hanger_box"><div class="selection_header hanger_header"><span>Item</span><span class="glyphicon glyphicon-remove"></span></div><div class="selection_img hanger_img"><img src="' + imglink + '"/></div></div>');
+            $('#myrack_content').append('<div class="selection_box hanger_box"><div class="selection_header hanger_header"><span>' + title + '</span><span class="glyphicon glyphicon-remove"></span></div><div class="selection_img hanger_img"><img src="' + imglink + '"/></div></div>');
         }
         else {
             alert("There are too many clothes on the rack!");
         }
         
+    });
+    
+    $rack_container.on('click', '.glyphicon', function(e){
+        e.preventDefault();
+        $(this).parents('.hanger_box').remove();
+        clothes_count--;
     });
     
 }); //end document.ready

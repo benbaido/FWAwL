@@ -64,6 +64,8 @@ a:active {
     background-color: $dug-option-selection-bgcolor;
     
     cursor: pointer;
+    
+    @include box-shadow(0px, 0px, 6px, #aaa);
 }
 
 .selection_header {
