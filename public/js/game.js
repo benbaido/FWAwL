@@ -42,7 +42,7 @@ $(document).ready(function(){
     $skin_tone_10_btn = $('#skin_tone_10');
     
     
-    var hidenumber = '500px';
+    //var hidenumber = '500px';
     
     var avatar_element = document.getElementById('left_contaienr');
     var options_element = document.getElementById('options_container');
@@ -191,7 +191,6 @@ $(document).ready(function(){
     */
     
     //change skin tones
-    
     $skin_tone_1_btn.click(function(){
         $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone1.png) no-repeat');
     });
@@ -223,6 +222,7 @@ $(document).ready(function(){
         $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone10.png) no-repeat');
     });
     
+    //other setting buttons
     $setting_male_btn.click(function(){
         
     });
@@ -247,8 +247,11 @@ $(document).ready(function(){
         
     });
     
+    //dressing the doll
     $options_container.on('click', '.selection_img', function(e){
         e.preventDefault();
+        //console.log('this:' + $(this));
+        
         if($(this).parent('#clothes_redcoat').length){
             console.log("redcoat clicked!");
             $avatar_content.find('#clothes_full_test1').toggle().toggleClass('clothes_puton');
@@ -275,7 +278,219 @@ $(document).ready(function(){
         }
     });
     
-});
+    //filtering search
+    $options_container.on('change', 'select', function(){
+        var selected_option = $('#options_nav_select option:selected').val();
+        
+        $options_container.find('.selection_box').each(function(){
+            if($(this).hasClass('clothes_filter_out')) {
+                $(this).show();
+                $(this).removeClass('clothes_filter_out');
+                //console.log('no more filters');
+            }
+        });
+        
+        if(selected_option === 'none') {
+            console.log('nothing selected');
+        }
+        else if(selected_option === 'fulloutfit') {
+            $options_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('clothes_type_full')) {
+                    //$(this).hide();
+                    $(this).addClass('clothes_filter_out');
+                    //console.log('fulloutfit - I am not the cloth you are looking for');
+                    //console.log($(this));
+                }
+            });
+        }
+        else if(selected_option === 'onepiece') {
+            $options_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('clothes_type_onepiece')) {
+                    $(this).addClass('clothes_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'tops') {
+            $options_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('clothes_type_top')) {
+                    $(this).addClass('clothes_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'bottoms') {
+            $options_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('clothes_type_bottom')) {
+                    $(this).addClass('clothes_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'styles_fabric_kente') {
+            $options_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('clothes_fabric_kente')) {
+                    $(this).addClass('clothes_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'styles_fabric_batik') {
+            $options_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('clothes_fabric_batik')) {
+                    $(this).addClass('clothes_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'styles_fabric_angelica') {
+            $options_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('clothes_fabric_angelica')) {
+                    $(this).addClass('clothes_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'styles_color_rainbow') {
+            $options_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('clothes_color_rainbow')) {
+                    $(this).addClass('clothes_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'styles_color_red') {
+            $options_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('clothes_color_red')) {
+                    $(this).addClass('clothes_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'styles_color_pink') {
+            $options_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('clothes_color_pink')) {
+                    $(this).addClass('clothes_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'styles_color_orange') {
+            $options_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('clothes_color_orange')) {
+                    $(this).addClass('clothes_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'styles_color_yellow') {
+            $options_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('clothes_color_yellow')) {
+                    $(this).addClass('clothes_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'styles_color_green') {
+            $options_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('clothes_color_green')) {
+                    $(this).addClass('clothes_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'styles_color_blue') {
+            $options_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('clothes_color_blue')) {
+                    $(this).addClass('clothes_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'styles_color_purple') {
+            $options_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('clothes_color_purple')) {
+                    $(this).addClass('clothes_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'styles_color_brown') {
+            $options_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('clothes_color_brown')) {
+                    $(this).addClass('clothes_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'styles_color_white') {
+            $options_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('clothes_color_white')) {
+                    $(this).addClass('clothes_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'styles_color_grey') {
+            $options_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('clothes_color_grey')) {
+                    $(this).addClass('clothes_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'styles_color_black') {
+            $options_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('clothes_color_black')) {
+                    $(this).addClass('clothes_filter_out');
+                }
+            });
+        }
+        
+        //filter out list
+        $options_container.find('.selection_box').each(function(){
+            if($(this).hasClass('clothes_filter_out')) {
+                $(this).hide();
+                //console.log($(this));
+            }
+        }); //end hide
+        
+    }); //end select_img filter
+    
+    //add things to the rack
+    var max_clothes_on_rack = 5;
+    var clothes_count = 0;
+    
+    $options_container.on('click', '.glyphicon', function(e){
+        //console.log('this (outside): ' + $(this));
+        
+        e.preventDefault();
+        
+        if(clothes_count < max_clothes_on_rack) {
+            clothes_count++;
+            //console.log('clothes count: ' + clothes_count);
+            
+            var imglink = '';
+            //console.log('this (inside): ' + $(this));
+            //console.log('this parent: ' + $(this).parent('.selection_box'));
+            imglink = $(this).parents('.selection_box').find('.selection_img img').attr('src');
+            //imglink = $(this).parent('.selection_box img').attr('src');
+            
+            /*
+            if($(this).parents('#clothes_redcoat').length){
+                imglink = '/public/partials/dressupgame/img/clothes/outfit/thumbnail/thmb_testdress1.png';
+            }
+            else if($(this).parents('#clothes_greydress').length){
+                imglink = '/public/partials/dressupgame/img/clothes/outfit/thumbnail/thmb_testdress2.png';
+            }
+            else if($(this).parents('#clothes_unicornsweater').length){
+                imglink = '/public/partials/dressupgame/img/clothes/tops/thumbnail/thmb_shirt1.png';
+            }
+            else if($(this).parents('#clothes_cosmosshirt').length){
+                imglink = '/public/partials/dressupgame/img/clothes/tops/thumbnail/thmb_shirt2.png';
+            }
+            else if($(this).parents('#clothes_ruffleskirt').length){
+                imglink = '/public/partials/dressupgame/img/clothes/bottoms/thumbnail/thmb_skirt1.png';
+            }
+            else if($(this).parents('#clothes_hippyskirt').length){
+                imglink = '/public/partials/dressupgame/img/clothes/bottoms/thumbnail/thmb_skirt2.png';
+            }
+            */
+            
+            //console.log('imglink: ' + imglink);
+            
+            $('#myrack_content').append('<div class="selection_box hanger_box"><div class="selection_header hanger_header"><span>Item</span><span class="glyphicon glyphicon-remove"></span></div><div class="selection_img hanger_img"><img src="' + imglink + '"/></div></div>');
+        }
+        else {
+            alert("There are too many clothes on the rack!");
+        }
+        
+    });
+    
+}); //end document.ready
 
 $(document).on('click', '.dressup_tab', function(){
     

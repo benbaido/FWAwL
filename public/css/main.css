@@ -774,7 +774,7 @@ a:active {
   margin: auto;
   overflow: hidden;
   position: relative;
-  background: url("../../public/partials/dressupgame/img/d_images/d_body_type_placeholder_260.png") no-repeat; }
+  background: url("../../public/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone9.png") no-repeat; }
   #avatar_content img {
     margin: 0px;
     padding: 0px; }
@@ -959,7 +959,13 @@ a:active {
   top: 95px;
   left: 2px; }
 
+#clothes_top_test1 {
+  display: none; }
+
 #clothes_top_test2 {
+  display: none; }
+
+#clothes_bottom_test1 {
   display: none; }
 
 #clothes_bottom_test2 {
