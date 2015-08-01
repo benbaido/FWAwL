@@ -273,7 +273,7 @@
     
     position: relative;
     
-    background: url(../../public/img/dgame/d_images/d_body_type_placeholder_260.png) no-repeat;
+    background: url('../../public/partials/dressupgame/img/d_images/d_body_type_placeholder_260.png') no-repeat;
     
     @media all and (max-width: 480px) {
         
@@ -346,7 +346,7 @@
         //left: -500px;
     }
     @media all and (min-width: 768px) and (max-width: 1023px) {
-        height: 360px;
+        height: 390px;
     }
     @media all and (min-width: 1024px) {
         height: 450px;
@@ -380,8 +380,8 @@
         //left: -500px;
     }
     @media all and (min-width: 768px) and (max-width: 1023px) {
-        width: 490px;
-        height: 360px;
+        width: 420px;
+        height: 390px;
     }
     @media all and (min-width: 1024px) {
         width: 700px;
@@ -416,11 +416,11 @@
         
     }
     @media all and (min-width: 768px) and (max-width: 1023px) {
-        height: 92%;
+        height: 338px;
         overflow-y: auto;
     }
     @media all and (min-width: 1024px) {
-        height: 94%;
+        height: 398px;
         overflow-y: auto;
     }
     
@@ -458,8 +458,8 @@
     }
     @media all and (min-width: 768px) and (max-width: 1023px) {
         //top: 0px;
-        width: 130px;
-        height: 360px;
+        width: 200px;
+        height: 390px;
         right: 0px;
     }
     @media all and (min-width: 1024px) {
@@ -564,40 +564,66 @@
     position: absolute;
 }
 
-#clothes_top {
+.clothes_top {
     width: 170px;
     height: 140px;
     
-    top: 100px;
+    top: 98px;
+    left: 0px;
     
     //@include opacity($color, $opacity);
     
-    background-color: opacity(lightgreen, 0.5);
+    //background-color: opacity(lightgreen, 0.5);
 }
 
-#clothes_bottom {
+.clothes_bottom {
     width: 170px;
     height: 290px;
     
-    top: 240px;
+    left: 0px;
+    top: 228px;
     
     //@include opacity($color, $opacity);
     
-    background-color: opacity(lightgoldenrodyellow, 0.5);
+    //background-color: opacity(lightgoldenrodyellow, 0.5);
     //color: lightyellow;
 }
 
-#clothes_full {
+.clothes_full {
     width: 170px;
     height: 430px;
     
-    top: 100px;
+    top: 95px;
+    left: 2px;
     
-    display: none;
+    //display: none;
     
     //@include opacity($color, $opacity);
     
-    background-color: opacity(lightsalmon, 0.5);
+    //background-color: opacity(lightsalmon, 0.5);
+}
+
+#clothes_top_test1 {
+    //display: none;
+}
+#clothes_top_test2 {
+    display: none;
+}
+
+#clothes_bottom_test1 {
+    //display: none;
+}
+
+#clothes_bottom_test2 {
+    display: none;
+}
+
+#clothes_full_test1 {
+    display: none;
+}
+
+#clothes_full_test2 {
+    display: none;
 }
 
 #settings_tone_box {
@@ -709,5 +735,9 @@
 }
 
 .hanger_img {
-    background: url(../../public/img/dgame/d_images/singlehanger_120.png) no-repeat;
+    background: url(../../public/partials/dressupgame/img/d_images/singlehanger_120.png) no-repeat;
+}
+
+.content_to_expand {
+    @inlcude transition(all, 0.6s, cubic-bezier(0.77, 0, 0.175, 1), 0.1s);
 }

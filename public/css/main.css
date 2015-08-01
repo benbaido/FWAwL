@@ -774,7 +774,7 @@ a:active {
   margin: auto;
   overflow: hidden;
   position: relative;
-  background: url(../../public/img/dgame/d_images/d_body_type_placeholder_260.png) no-repeat; }
+  background: url("../../public/partials/dressupgame/img/d_images/d_body_type_placeholder_260.png") no-repeat; }
   #avatar_content img {
     margin: 0px;
     padding: 0px; }
@@ -794,7 +794,7 @@ a:active {
   position: relative; }
   @media all and (min-width: 768px) and (max-width: 1023px) {
     #options_rack_container {
-      height: 360px; } }
+      height: 390px; } }
   @media all and (min-width: 1024px) {
     #options_rack_container {
       height: 450px; } }
@@ -820,8 +820,8 @@ a:active {
       position: absolute; } }
   @media all and (min-width: 768px) and (max-width: 1023px) {
     #options_container {
-      width: 490px;
-      height: 360px; } }
+      width: 420px;
+      height: 390px; } }
   @media all and (min-width: 1024px) {
     #options_container {
       width: 700px;
@@ -842,11 +842,11 @@ a:active {
   padding: 5px; }
   @media all and (min-width: 768px) and (max-width: 1023px) {
     #options_content {
-      height: 92%;
+      height: 338px;
       overflow-y: auto; } }
   @media all and (min-width: 1024px) {
     #options_content {
-      height: 94%;
+      height: 398px;
       overflow-y: auto; } }
 
 #myrack_container {
@@ -870,8 +870,8 @@ a:active {
       display: none; } }
   @media all and (min-width: 768px) and (max-width: 1023px) {
     #myrack_container {
-      width: 130px;
-      height: 360px;
+      width: 200px;
+      height: 390px;
       right: 0px; } }
   @media all and (min-width: 1024px) {
     #myrack_container {
@@ -941,24 +941,35 @@ a:active {
 .dug_clothes_box {
   position: absolute; }
 
-#clothes_top {
+.clothes_top {
   width: 170px;
   height: 140px;
-  top: 100px;
-  background-color: rgba(144, 238, 144, 0.5); }
+  top: 98px;
+  left: 0px; }
 
-#clothes_bottom {
+.clothes_bottom {
   width: 170px;
   height: 290px;
-  top: 240px;
-  background-color: rgba(250, 250, 210, 0.5); }
+  left: 0px;
+  top: 228px; }
 
-#clothes_full {
+.clothes_full {
   width: 170px;
   height: 430px;
-  top: 100px;
-  display: none;
-  background-color: rgba(255, 160, 122, 0.5); }
+  top: 95px;
+  left: 2px; }
+
+#clothes_top_test2 {
+  display: none; }
+
+#clothes_bottom_test2 {
+  display: none; }
+
+#clothes_full_test1 {
+  display: none; }
+
+#clothes_full_test2 {
+  display: none; }
 
 #settings_tone_box {
   float: left;
@@ -1033,7 +1044,10 @@ a:active {
   cursor: pointer; }
 
 .hanger_img {
-  background: url(../../public/img/dgame/d_images/singlehanger_120.png) no-repeat; }
+  background: url(../../public/partials/dressupgame/img/d_images/singlehanger_120.png) no-repeat; }
+
+.content_to_expand {
+  @inlcude transition(all, 0.6s, cubic-bezier(0.77, 0, 0.175, 1), 0.1s); }
 
 #dug_order_container {
   width: 400px;
@@ -1073,8 +1087,5 @@ a:active {
     -ms-box-shadow: 0px 1px 1px #607c42;
     -o-box-shadow: 0px 1px 1px #607c42;
     box-shadow: 0px 1px 1px #607c42; }
-
-body {
-  @inlcude transition(all, 1s, cubic-bezier(0.77, 0, 0.175, 1), 0.1s); }
 
 /*# sourceMappingURL=main.css.map */

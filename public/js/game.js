@@ -28,6 +28,8 @@ $(document).ready(function(){
     $setting_save_btn = $('#settings_save');
     
     //skin tones
+    $avatar_content = $('#avatar_content');
+    
     $skin_tone_1_btn = $('#skin_tone_1');
     $skin_tone_2_btn = $('#skin_tone_2');
     $skin_tone_3_btn = $('#skin_tone_3');
@@ -188,6 +190,91 @@ $(document).ready(function(){
     }
     */
     
+    //change skin tones
+    
+    $skin_tone_1_btn.click(function(){
+        $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone1.png) no-repeat');
+    });
+    $skin_tone_2_btn.click(function(){
+        $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone2.png) no-repeat');
+    });
+    $skin_tone_3_btn.click(function(){
+        $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone3.png) no-repeat');
+    });
+    $skin_tone_4_btn.click(function(){
+        $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone4.png) no-repeat');
+    });
+    $skin_tone_5_btn.click(function(){
+        $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone5.png) no-repeat');
+    });
+    $skin_tone_6_btn.click(function(){
+        $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone6.png) no-repeat');
+    });
+    $skin_tone_7_btn.click(function(){
+        $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone7.png) no-repeat');
+    });
+    $skin_tone_8_btn.click(function(){
+        $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone8.png) no-repeat');
+    });
+    $skin_tone_9_btn.click(function(){
+        $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone9.png) no-repeat');
+    });
+    $skin_tone_10_btn.click(function(){
+        $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone10.png) no-repeat');
+    });
+    
+    $setting_male_btn.click(function(){
+        
+    });
+    
+    $setting_female_btn.click(function(){
+        
+    });
+    
+    $setting_reset_btn.click(function(){
+        $('#avatar_content > div').hide();
+    });
+    
+    $setting_png_btn.click(function(){
+        
+    });
+    
+    $setting_jpg_btn.click(function(){
+        
+    });
+    
+    $setting_save_btn.click(function(){
+        
+    });
+    
+    $options_container.on('click', '.selection_img', function(e){
+        e.preventDefault();
+        if($(this).parent('#clothes_redcoat').length){
+            console.log("redcoat clicked!");
+            $avatar_content.find('#clothes_full_test1').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#clothes_greydress').length){
+            console.log("greydress clicked!");
+            $avatar_content.find('#clothes_full_test2').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#clothes_unicornsweater').length){
+            console.log("unicornsweater clicked!");
+            $avatar_content.find('#clothes_top_test1').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#clothes_cosmosshirt').length){
+            console.log("cosmosshirt clicked!");
+            $avatar_content.find('#clothes_top_test2').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#clothes_ruffleskirt').length){
+            console.log("ruffleskirt clicked!");
+            $avatar_content.find('#clothes_bottom_test1').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#clothes_hippyskirt').length){
+            console.log("hippyskirt clicked!");
+            $avatar_content.find('#clothes_bottom_test2').toggle().toggleClass('clothes_puton');
+        }
+    });
+    
 });
 
 $(document).on('click', '.dressup_tab', function(){
@@ -309,3 +396,7 @@ $(document).on('click', '.dressup_tab', function(){
         
     }
 });
+
+//$(document).on('', '', function(){
+    //if()
+//});
