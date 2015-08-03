@@ -192,34 +192,34 @@ $(document).ready(function(){
     
     //change skin tones
     $skin_tone_1_btn.click(function(){
-        $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone1.png) no-repeat');
+        $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone1.png") no-repeat');
     });
     $skin_tone_2_btn.click(function(){
-        $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone2.png) no-repeat');
+        $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone2.png") no-repeat');
     });
     $skin_tone_3_btn.click(function(){
-        $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone3.png) no-repeat');
+        $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone3.png") no-repeat');
     });
     $skin_tone_4_btn.click(function(){
-        $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone4.png) no-repeat');
+        $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone4.png") no-repeat');
     });
     $skin_tone_5_btn.click(function(){
-        $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone5.png) no-repeat');
+        $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone5.png") no-repeat');
     });
     $skin_tone_6_btn.click(function(){
-        $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone6.png) no-repeat');
+        $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone6.png") no-repeat');
     });
     $skin_tone_7_btn.click(function(){
-        $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone7.png) no-repeat');
+        $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone7.png") no-repeat');
     });
     $skin_tone_8_btn.click(function(){
-        $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone8.png) no-repeat');
+        $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone8.png") no-repeat');
     });
     $skin_tone_9_btn.click(function(){
-        $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone9.png) no-repeat');
+        $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone9.png") no-repeat');
     });
     $skin_tone_10_btn.click(function(){
-        $avatar_content.css('background', 'url(img/d_images/d_body_type_placeholder_260_tone10.png) no-repeat');
+        $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone10.png") no-repeat');
     });
     
     //other setting buttons
@@ -275,7 +275,44 @@ $(document).ready(function(){
         else if($(this).parent('#clothes_hippyskirt').length){
             console.log("hippyskirt clicked!");
             $avatar_content.find('#clothes_bottom_test2').toggle().toggleClass('clothes_puton');
+        } // non african stops here ---| african clothes starts ------>
+        else if($(this).parent('#clothes_purpledress').length){
+            $avatar_content.find('#clothes_full_test3').toggle().toggleClass('clothes_puton');
         }
+        else if($(this).parent('#clothes_orangeress').length){
+            $avatar_content.find('#clothes_full_test4').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#clothes_orangedress1').length){
+            $avatar_content.find('#clothes_full_test5').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#clothes_bluedress').length){
+            $avatar_content.find('#clothes_full_test6').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#clothes_angelinedress').length){
+            $avatar_content.find('#clothes_full_test7').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#clothes_circleshirt').length){
+            $avatar_content.find('#clothes_top_test4').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#clothes_orangeswirlshirt').length){
+            $avatar_content.find('#clothes_top_test3').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#clothes_greentop').length){
+            $avatar_content.find('#clothes_top_test5').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#clothes_croptop').length){
+            $avatar_content.find('#clothes_top_test6').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#clothes_aztecskirt').length){
+            $avatar_content.find('#clothes_bottom_test3').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#clothes_browngreyskirt').length){
+            $avatar_content.find('#clothes_bottom_test4').toggle().toggleClass('clothes_puton');
+        }
+        
+        
+        
+        
     });
     
     //filtering search
@@ -341,6 +378,13 @@ $(document).ready(function(){
         else if(selected_option === 'styles_fabric_angelica') {
             $options_container.find('.selection_box').each(function(){
                 if(!$(this).hasClass('clothes_fabric_angelica')) {
+                    $(this).addClass('clothes_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'styles_fabric_ankara') {
+            $options_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('clothes_fabric_ankara')) {
                     $(this).addClass('clothes_filter_out');
                 }
             });
@@ -497,6 +541,135 @@ $(document).ready(function(){
         e.preventDefault();
         $(this).parents('.hanger_box').remove();
         clothes_count--;
+    }); //end hang on rack function
+    
+    $picks_container.on('change', 'select', function() {
+        var selected_option = $('#mypicks_select_country option:selected').val();
+        
+        $picks_container.find('.selection_box').each(function(){
+            if($(this).hasClass('results_filter_out')) {
+                $(this).show();
+                $(this).removeClass('results_filter_out');
+                //console.log('no more filters');
+            }
+        });
+        if(selected_option === 'none') {
+            //console.log('nothing selected');
+        }
+        else if(selected_option === 'Ghana') {
+            $picks_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('from_ghana')) {
+                    $(this).addClass('results_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'Nigeria') {
+            $picks_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('from_nigeria')) {
+                    $(this).addClass('results_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'Ivory_Coast') {
+            $picks_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('from_ivory_coast')) {
+                    $(this).addClass('results_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'Burkina_Faso') {
+            $picks_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('from_burkina_faso')) {
+                    $(this).addClass('results_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'Togo') {
+            $picks_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('from_togo')) {
+                    $(this).addClass('results_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'Benin') {
+            $picks_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('from_benin')) {
+                    $(this).addClass('results_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'Liberia') {
+            $picks_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('from_liberia')) {
+                    $(this).addClass('results_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'Sierra_Leone') {
+            $picks_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('from_sierra_leone')) {
+                    $(this).addClass('results_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'Guinea') {
+            $picks_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('from_guinea')) {
+                    $(this).addClass('results_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'Guinea_Bissau') {
+            $picks_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('from_guinea_bissau')) {
+                    $(this).addClass('results_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'Senegal') {
+            $picks_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('from_senegal')) {
+                    $(this).addClass('results_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'The_Gambia') {
+            $picks_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('from_the_gambia')) {
+                    $(this).addClass('results_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'Cape_Verde') {
+            $picks_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('from_cape_verde')) {
+                    $(this).addClass('results_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'Mali') {
+            $picks_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('from_mali')) {
+                    $(this).addClass('results_filter_out');
+                }
+            });
+        }
+        else if(selected_option === 'Niger') {
+            $picks_container.find('.selection_box').each(function(){
+                if(!$(this).hasClass('from_niger')) {
+                    $(this).addClass('results_filter_out');
+                }
+            });
+        }
+        
+        //filter out list
+        $picks_container.find('.selection_box').each(function(){
+            if($(this).hasClass('results_filter_out')) {
+                $(this).hide();
+                //console.log($(this));
+            }
+        }); //end hide
+        
     });
     
 }); //end document.ready

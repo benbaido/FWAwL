@@ -102,7 +102,8 @@
     
     @media all and (max-width: 480px) {
         //phone
-        top: 210px;
+        position: relative;
+        //top: 210px;
         width: 100%;
         min-height: 400px;
     }

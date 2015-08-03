@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,79 +7,91 @@
         Dress up game
     </title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../../css/main.css">
 </head>
 
 <body>
-<!-- start global navbar-->
-        <div class="navbar navbar-inverse">
-            <div class="container-fluid"  id="navbar_container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#inside_nav">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../index.html"><div id="logo_box"></div></a>
-                </div>
-                
-                <div class="nav-collapse navbar-responsive-collapse" id="inside_nav">
-                    <ul class="nav navbar-nav navbar-left">
-                        <li>
-                            <a href="../catalog.html">Catalog</a>
-                        </li>
-                        <li>
-                            <a href="play.html">Play!</a>
-                        </li>
-                        <!--<li>
+    <!-- start global navbar-->
+    <div class="navbar navbar-inverse">
+        <div class="container-fluid" id="navbar_container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#inside_nav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">
+                    <div id="logo_box"></div>
+                </a>
+            </div>
+
+            <div class="nav-collapse navbar-responsive-collapse" id="inside_nav">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a href="../catalog.html">Catalog</a>
+                    </li>
+                    <li>
+                        <a href="play.html">Play!</a>
+                    </li>
+                    <!--<li>
                             <a href="#">Culture</a>
                         </li>-->
-                        <li>
-                            <a href="../faq.html">FAQ</a>
-                        </li>
-                        
-                    </ul> <!-- end links list -->
-                    <form class="navbar-form navbar-left">
-                        <input type="text" class="form-control" placeholder="search" />
-                        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
-                    </form><!--navbar form-->
-                    
-                    <!-- input group nav
+                    <li>
+                        <a href="../faq.html">FAQ</a>
+                    </li>
+
+                </ul>
+                <!-- end links list -->
+                <form class="navbar-form navbar-left">
+                    <input type="text" class="form-control" placeholder="search" />
+                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </form>
+                <!--navbar form-->
+
+                <!-- input group nav
                     <div class="input-group navbar-left">
                         <input type="text" class="form-control" placeholder="search" />
                         <span class="input-group-btn">
                             <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
                         </span>
                     </div> -->
-                    
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#"><span class="fake_button">Login</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="../../img/icons/icon-basket_40x40.png" alt="shopping basket" /></a>
-                        </li>
-                    </ul><!-- end right pull-->
-                    
-                </div>
-                <!--end nav collapse-->
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#"><span class="fake_button">Login</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../../img/icons/icon-basket_40x40.png" alt="shopping basket" />
+                        </a>
+                    </li>
+                </ul>
+                <!-- end right pull-->
+
             </div>
-        </div> <!-- end global navbar-->
-    
+            <!--end nav collapse-->
+        </div>
+    </div>
+    <!-- end global navbar-->
+
     <div class="main_container">
         <!--<h1>Play!</h1>-->
         <div id="game_container">
-            
+
             <div id="dug_tab_container">
-                <div class="dressup_tab" id="tab_avatar"><span>Avatar</span></div>
-                <div class="dressup_tab" id="tab_options"><span>Options</span></div>
-                <div class="dressup_tab" id="tab_myrack"><span>myRack</span></div>
-                <div class="dressup_tab" id="tab_mypicks"><span>myPicks</span></div>
+                <div class="dressup_tab" id="tab_avatar"><span>Avatar</span>
+                </div>
+                <div class="dressup_tab" id="tab_options"><span>Options</span>
+                </div>
+                <div class="dressup_tab" id="tab_myrack"><span>myRack</span>
+                </div>
+                <div class="dressup_tab" id="tab_mypicks"><span>myPicks</span>
+                </div>
             </div>
-            <a href="order.html"><div class="fake_button" id="checkoutnow_btn">Get It Made!</div></a>
             
+
             <div id="left_contaienr" class="content_to_expand is_expanded">
                 <div id="avatar_container">
                     <div class="dug_container_header">Avatar</div>
@@ -87,30 +100,74 @@
                         <div class="dug_clothes_box clothes_top"></div>
                         <div class="dug_clothes_box clothes_bottom"></div>
                         <div class="dug_clothes_box clothes_full"></div>
-                        
-                        <div class="dug_clothes_box clothes_top" id="clothes_top_test1">
-                            <img src="/public/partials/dressupgame/img/clothes/tops/testshirt.png" />
-                        </div>
-                        <div class="dug_clothes_box clothes_top" id="clothes_top_test2">
-                            <img src="/public/partials/dressupgame/img/clothes/tops/testshirt2.png" />
-                        </div>
-                        
+
                         <div class="dug_clothes_box clothes_bottom" id="clothes_bottom_test1">
-                            <img src="/public/partials/dressupgame/img/clothes/bottoms/testskirt1.png" />
+                            <img src="img/clothes/bottoms/testskirt1.png" />
                         </div>
                         <div class="dug_clothes_box clothes_bottom" id="clothes_bottom_test2">
-                            <img src="/public/partials/dressupgame/img/clothes/bottoms/testskirt2.png" />
+                            <img src="img/clothes/bottoms/testskirt2.png" />
                         </div>
-                        
+
+                        <div class="dug_clothes_box clothes_top" id="clothes_top_test1">
+                            <img src="img/clothes/tops/testshirt.png" />
+                        </div>
+                        <div class="dug_clothes_box clothes_top" id="clothes_top_test2">
+                            <img src="img/clothes/tops/testshirt2.png" />
+                        </div>
+
                         <div class="dug_clothes_box clothes_full" id="clothes_full_test1">
-                            <img src="/public/partials/dressupgame/img/clothes/outfit/testdress1.png" />
+                            <img src="img/clothes/outfit/testdress1.png" />
                         </div>
                         <div class="dug_clothes_box clothes_full" id="clothes_full_test2">
-                            <img src="/public/partials/dressupgame/img/clothes/outfit/testdress2.png" />
+                            <img src="img/clothes/outfit/testdress2.png" />
                         </div>
-                        
+
+                        <!-- actual african clothes/styles -->
+                        <div class="dug_clothes_box clothes_bottom" id="clothes_bottom_test3">
+                            <img src="img/clothes/bottoms/testskirt3.png" />
+                        </div>
+                        <div class="dug_clothes_box clothes_bottom" id="clothes_bottom_test4">
+                            <img src="img/clothes/bottoms/testskirt4.png" />
+                        </div>
+
+                        <div class="dug_clothes_box clothes_top" id="clothes_top_test3">
+                            <img src="img/clothes/tops/testshirt3.png" />
+                        </div>
+                        <div class="dug_clothes_box clothes_top" id="clothes_top_test4">
+                            <img src="img/clothes/tops/testshirt4.png" />
+                        </div>
+
+                        <div class="dug_clothes_box clothes_top" id="clothes_top_test5">
+                            <img src="img/clothes/tops/testshirt5.png" />
+                        </div>
+                        <div class="dug_clothes_box clothes_top" id="clothes_top_test6">
+                            <img src="img/clothes/tops/testshirt6.png" />
+                        </div>
+
+                        <div class="dug_clothes_box clothes_full" id="clothes_full_test3">
+                            <img src="img/clothes/outfit/testdress3.png" />
+                        </div>
+                        <div class="dug_clothes_box clothes_full" id="clothes_full_test4">
+                            <img src="img/clothes/outfit/testdress4.png" />
+                        </div>
+                        <div class="dug_clothes_box clothes_full" id="clothes_full_test5">
+                            <img src="img/clothes/outfit/testdress5.png" />
+                        </div>
+                        <div class="dug_clothes_box clothes_full" id="clothes_full_test6">
+                            <img src="img/clothes/outfit/testdress6.png" />
+                        </div>
+                        <div class="dug_clothes_box clothes_full" id="clothes_full_test7">
+                            <img src="img/clothes/outfit/testdress7.png" />
+                        </div>
+
+
+
                     </div>
-                </div> <!-- end avatar container -->
+                </div>
+                <!-- end avatar container -->
+                <a href="order.html">
+                <div class="fake_button" id="checkoutnow_btn">Get It Made!</div>
+            </a>
                 <div id="settings_container">
                     <div class="dug_container_header">Settings</div>
                     <div id="settings_content">
@@ -128,31 +185,34 @@
                         </div>
                         <div id="settings_other_box">
                             <div id="settings_male" class="settings_icon">
-                                <img alt="male" src="/public/partials/dressupgame/img/d_images/d_game_pref_male.png" />
+                                <img alt="male" src="img/d_images/d_game_pref_male.png" />
                             </div>
                             <div id="settings_female" class="settings_icon">
-                                <img alt="female" src="/public/partials/dressupgame/img/d_images/d_game_pref_female.png" />
+                                <img alt="female" src="img/d_images/d_game_pref_female.png" />
                             </div>
                             <div id="settings_reset" class="settings_icon">
-                                <img alt="reset" src="/public/partials/dressupgame/img/d_images/d_game_pref_reset.png" />
+                                <img alt="reset" src="img/d_images/d_game_pref_reset.png" />
                             </div>
                             <div id="settings_png" class="settings_icon">
-                                <img alt="export to png" src="/public/partials/dressupgame/img/d_images/d_game_pref_export+png.png" />
+                                <img alt="export to png" src="img/d_images/d_game_pref_export+png.png" />
                             </div>
                             <div id="settings_jpg" class="settings_icon">
-                                <img alt="export to jpg" src="/public/partials/dressupgame/img/d_images/d_game_pref_export+jpg.png" />
+                                <img alt="export to jpg" src="img/d_images/d_game_pref_export+jpg.png" />
                             </div>
                             <div id="settings_save" class="settings_icon">
-                                <img alt="save" src="/public/partials/dressupgame/img/d_images/d_game_pref_save.png" />
+                                <img alt="save" src="img/d_images/d_game_pref_save.png" />
                             </div>
                         </div>
                     </div>
-                </div> <!-- end settings container -->
-            </div> <!-- end left container -->
+                </div>
+                <!-- end settings container -->
+            </div>
+            <!-- end left container -->
             <div id="right_container">
-                <div id="options_rack_container" >
+                <div id="options_rack_container">
                     <div id="options_container" class="content_to_expand">
-                        <div class="dug_container_header"><span class="selection_title">Options </span><br>
+                        <div class="dug_container_header"><span class="selection_title">Options </span>
+                            <br>
                             <select id="options_nav_select">
                                 <option value="none"> -- Select One -- </option>
                                 <option value="fulloutfit">Full Outfits</option>
@@ -160,25 +220,29 @@
                                 <option value="tops">Tops</option>
                                 <option value="bottoms">Bottoms</option>
                                 <optgroup label="Fabric">
+                                    <!--
                                 <option value="styles_fabric_kente">Kente</option>
-                                <option value="styles_fabric_batik">Batik</option>
-                                <option value="styles_fabric_angelica">Angelica</option> <!--
+                                <option value="styles_fabric_batik">Batik</option>-->
+                                    <option value="styles_fabric_angelica">Angeline</option>
+                                    <!--
                                 <option value="styles_fabric_"></option> -->
-                                    </optgroup>
+                                </optgroup>
                                 <optgroup label="Color">
-                                <option value="styles_color_rainbow">Rainbow</option>
-                                <option value="styles_color_red">Red</option>
+                                    <option value="styles_color_rainbow">Rainbow</option>
+                                    <option value="styles_color_red">Red</option>
                                     <option value="styles_color_pink">Pink</option>
-                                <option value="styles_color_orange">Orange</option>
-                                <option value="styles_color_yellow">Yellow</option>
-                                <option value="styles_color_green">Green</option>
-                                <option value="styles_color_blue">Blue</option>
-                                <option value="styles_color_purple">Purple</option>
-                                <option value="styles_color_brown">Brown</option>
-                                <option value="styles_color_white">White</option>
-                                <option value="styles_color_grey">Grey</option>
-                                <option value="styles_color_black">Black</option>
-                                    </optgroup><!--
+                                    <option value="styles_color_orange">Orange</option>
+                                    <option value="styles_color_yellow">Yellow</option>
+                                    <option value="styles_color_green">Green</option>
+                                    <option value="styles_color_blue">Blue</option>
+                                    <option value="styles_color_purple">Purple</option>
+                                    <option value="styles_color_brown">Brown</option>
+                                    <option value="styles_color_white">White</option>
+                                    <!--
+                                <option value="styles_color_grey">Grey</option>-->
+                                    <option value="styles_color_black">Black</option>
+                                </optgroup>
+                                <!--
                                 <option value="styles_shapes">Styles -- Shapes</option> 
                                 <optgroup label="Pattern">
                                 <option value="styles_pattern_kente">Pattern</option>
@@ -186,88 +250,303 @@
                             </select>
                         </div>
                         <div id="options_content">
-                            
+                            <!--
                             <div class="selection_box clothes_color_red clothes_type_full" id="clothes_redcoat">
                                 <div class="selection_header"><span class="selection_title">Coat</span><span class="glyphicon glyphicon-plus"></span></div>
                                 <div class="selection_img">
-                                    <img src="/public/partials/dressupgame/img/clothes/outfit/thumbnail/thmb_testdress1.png" />
+                                    <img src="img/clothes/outfit/thumbnail/thmb_testdress1.png" />
                                 </div>
-                            </div> <!-- end selection -->
+                            </div>       -->
+                            <!-- end selection -->
+                            <!--
                             <div class="selection_box clothes_color_grey clothes_type_full" id="clothes_greydress">
                                 <div class="selection_header"><span class="selection_title">Dress 1</span><span class="glyphicon glyphicon-plus"></span></div>
                                 <div class="selection_img">
-                                    <img src="/public/partials/dressupgame/img/clothes/outfit/thumbnail/thmb_testdress2.png" />
+                                    <img src="img/clothes/outfit/thumbnail/thmb_testdress2.png" />
                                 </div>
-                            </div> <!-- end selection -->
+                            </div>       -->
+                            <!-- end selection -->
+                            <!--
                             <div class="selection_box clothes_color_blue clothes_type_top" id="clothes_unicornsweater">
                                 <div class="selection_header"><span class="selection_title">Sweater</span><span class="glyphicon glyphicon-plus"></span></div>
                                 <div class="selection_img">
-                                    <img src="/public/partials/dressupgame/img/clothes/tops/thumbnail/thmb_shirt1.png" />
+                                    <img src="img/clothes/tops/thumbnail/thmb_shirt1.png" />
                                 </div>
-                            </div> <!-- end selection -->
+                            </div>       -->
+                            <!-- end selection -->
+                            <!--
                             <div class="selection_box clothes_color_rainbow clothes_type_top" id="clothes_cosmosshirt">
                                 <div class="selection_header"><span class="selection_title">Shirt 1</span><span class="glyphicon glyphicon-plus"></span></div>
                                 <div class="selection_img">
-                                    <img src="/public/partials/dressupgame/img/clothes/tops/thumbnail/thmb_shirt2.png" />
+                                    <img src="img/clothes/tops/thumbnail/thmb_shirt2.png" />
                                 </div>
-                            </div> <!-- end selection -->
+                            </div>       -->
+                            <!-- end selection -->
+                            <!--
                             <div class="selection_box clothes_color_pink clothes_type_bottom" id="clothes_ruffleskirt">
                                 <div class="selection_header"><span class="selection_title">Short Skirt</span><span class="glyphicon glyphicon-plus"></span></div>
                                 <div class="selection_img">
-                                    <img src="/public/partials/dressupgame/img/clothes/bottoms/thumbnail/thmb_skirt1.png" />
+                                    <img src="img/clothes/bottoms/thumbnail/thmb_skirt1.png" />
                                 </div>
-                            </div> <!-- end selection -->
+                            </div>       -->
+                            <!-- end selection -->
+                            <!--
                             <div class="selection_box clothes_color_rainbow clothes_type_bottom" id="clothes_hippyskirt">
                                 <div class="selection_header"><span class="selection_title">Long Skirt</span><span class="glyphicon glyphicon-plus"></span></div>
                                 <div class="selection_img">
-                                    <img src="/public/partials/dressupgame/img/clothes/bottoms/thumbnail/thmb_skirt2.png" />
+                                    <img src="img/clothes/bottoms/thumbnail/thmb_skirt2.png" />
                                 </div>
-                            </div> <!-- end selection -->
-                            
+                            </div>       -->
+                            <!-- end selection -->
+
+                            <!-- african clothing -->
+
+                            <div class="selection_box clothes_fabric_ankara clothes_color_purple clothes_type_full" id="clothes_purpledress">
+                                <div class="selection_header"><span class="selection_title">Dress</span><span class="glyphicon glyphicon-plus"></span>
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/clothes/outfit/thumbnail/thmb_testdress3.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+                            <div class="selection_box clothes_fabric_ankara clothes_color_orange clothes_color_brown clothes_type_full" id="clothes_orangeress">
+                                <div class="selection_header"><span class="selection_title">Dress</span><span class="glyphicon glyphicon-plus"></span>
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/clothes/outfit/thumbnail/thmb_testdress4.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+                            <div class="selection_box clothes_fabric_ankara clothes_color_red clothes_color_brown clothes_type_full" id="clothes_orangedress1">
+                                <div class="selection_header"><span class="selection_title">Dress</span><span class="glyphicon glyphicon-plus"></span>
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/clothes/outfit/thumbnail/thmb_testdress5.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+                            <div class="selection_box clothes_fabric_ankara clothes_color_blue clothes_type_full" id="clothes_bluedress">
+                                <div class="selection_header"><span class="selection_title">Dress</span><span class="glyphicon glyphicon-plus"></span>
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/clothes/outfit/thumbnail/thmb_testdress6.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+                            <div class="selection_box clothes_fabric_angelica clothes_color_orange clothes_color_green clothes_color_blue clothes_color_yellow clothes_type_full" id="clothes_angelinedress">
+                                <div class="selection_header"><span class="selection_title">Dress</span><span class="glyphicon glyphicon-plus"></span>
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/clothes/outfit/thumbnail/thmb_testdress7.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+
+
+                            <div class="selection_box clothes_fabric_ankara clothes_color_blue clothes_color_green clothes_color_black clothes_color_red clothes_type_top" id="clothes_circleshirt">
+                                <div class="selection_header"><span class="selection_title">Top</span><span class="glyphicon glyphicon-plus"></span>
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/clothes/tops/thumbnail/thmb_testshirt4.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+                            <div class="selection_box clothes_fabric_ankara clothes_color_orange clothes_color_red clothes_type_top" id="clothes_orangeswirlshirt">
+                                <div class="selection_header"><span class="selection_title">Top</span><span class="glyphicon glyphicon-plus"></span>
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/clothes/tops/thumbnail/thmb_testshirt3.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+                            <div class="selection_box clothes_fabric_ankara clothes_color_blue clothes_color_white clothes_type_top" id="clothes_greentop">
+                                <div class="selection_header"><span class="selection_title">Top</span><span class="glyphicon glyphicon-plus"></span>
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/clothes/tops/thumbnail/thmb_testshirt5.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+                            <div class="selection_box clothes_fabric_ankara clothes_color_rainbow clothes_color_blue clothes_color_red clothes_color_green clothes_color_yellow clothes_type_top" id="clothes_croptop">
+                                <div class="selection_header"><span class="selection_title">Top</span><span class="glyphicon glyphicon-plus"></span>
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/clothes/tops/thumbnail/thmb_testshirt6.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+
+
+                            <div class="selection_box clothes_color_orange clothes_color_white clothes_color_black clothes_type_bottom" id="clothes_aztecskirt">
+                                <div class="selection_header"><span class="selection_title">Long Skirt</span><span class="glyphicon glyphicon-plus"></span>
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/clothes/bottoms/thumbnail/thmb_testskirt3.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+                            <div class="selection_box clothes_color_brown clothes_color_blue clothes_type_bottom" id="clothes_browngreyskirt">
+                                <div class="selection_header"><span class="selection_title">Medium Skirt</span><span class="glyphicon glyphicon-plus"></span>
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/clothes/bottoms/thumbnail/thmb_testskirt4.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+
+
                             <!-- <img src="/public/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone1.png"/>
                             <img src="img/d_images/d_body_type_placeholder_260_tone1.png" /> -->
-                            
-                        </div> <!--end options content -->
-                    </div> <!-- end options container -->
+
+                        </div>
+                        <!--end options content -->
+                    </div>
+                    <!-- end options container -->
                     <div id="myrack_container" class="content_to_expand">
                         <div class="dug_container_header">My Rack</div>
                         <div id="myrack_content">
-                            
+
                             <!--
                             <div class="selection_box hanger_box">
                                 <div class="selection_header hanger_header"><span>Item</span><span class="glyphicon glyphicon-remove"></span></div>
                                 <div class="selection_img hanger_img"></div>
-                            </div> --><!-- end selection -->
-                            
-                            
-                        </div> <!-- end myrack content -->
-                    </div> <!-- end myrack container -->
-                </div> <!-- end options rack container -->
+                            </div> -->
+                            <!-- end selection -->
+
+
+                        </div>
+                        <!-- end myrack content -->
+                    </div>
+                    <!-- end myrack container -->
+                </div>
+                <!-- end options rack container -->
                 <div id="mypicks_container" class="content_to_expand">
                     <div class="dug_container_header">My Picks</div>
                     <div id="mypicks_content">
-                        
-                        
-                        <div class="selection_box">
-                                <div class="selection_header"><span>Item</span><span class="glyphicon glyphicon-plus"></span></div>
-                                <div class="selection_img"></div>
-                            </div> <!-- end selection -->
-                            <div class="selection_box">
-                                <div class="selection_header"><span>Item</span><span class="glyphicon glyphicon-plus"></span></div>
-                                <div class="selection_img"></div>
-                            </div> <!-- end selection -->
-                            <div class="selection_box">
-                                <div class="selection_header"><span>Item</span><span class="glyphicon glyphicon-plus"></span></div>
-                                <div class="selection_img"></div>
-                            </div> <!-- end selection -->
-                        
-                    </div> <!-- end mypicks content -->
-                </div> <!-- end mypicks container -->
-            </div> <!-- end right container -->
+                        <div id="mypicks_nav">
+                            Country:
+                            <select id="mypicks_select_country">
+                                <option value="none">-- Select --</option>
+                                <option value="Ghana">Ghana</option>
+                                <option value="Nigeria">Nigeria</option>
+                                <option value="Ivory_Coast">Ivory Coast</option>
+                                <option value="Burkina_Faso">Burkina Faso</option>
+                                <option value="Togo">Togo</option>
+                                <option value="Benin">Benin</option>
+                                <option value="Liberia">Liberia</option>
+                                <option value="Sierra_Leone">Sierra Leone</option>
+                                <option value="Guinea">Guinea</option>
+                                <option value="Guinea_Bissau">Guinea-Bissau</option>
+                                <option value="Senegal">Senegal</option>
+                                <option value="The_Gambia">The Gambia</option>
+                                <option value="Cape_Verde">Cape Verde</option>
+                                <option value="Mali">Mali</option>
+                                <option value="Niger">Niger</option>
+                            </select>
+                        </div>
+                        <div id="mypicks_select_content">
+                            <div class="selection_box from_burkina_faso">
+                                <div class="selection_header"><span>Dan Fani</span><!--<span class="glyphicon glyphicon-plus"></span>-->
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/country/burkinafaso_danfani.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+                            <div class="selection_box from_ghana">
+                                <div class="selection_header"><span>Kente</span><!--<span class="glyphicon glyphicon-plus"></span>-->
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/country/ghana_kente.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+                            <div class="selection_box from_guinea">
+                                <div class="selection_header"><span>Borcade</span><!--<span class="glyphicon glyphicon-plus"></span>-->
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/country/guinea_brocade.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+                            <div class="selection_box from_ivory_coast">
+                                <div class="selection_header"><span>Kente</span><!--<span class="glyphicon glyphicon-plus"></span>-->
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/country/ivorycoast_kente.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+                            <div class="selection_box from_benin">
+                                <div class="selection_header"><span>Dashiki</span><!--<span class="glyphicon glyphicon-plus"></span>-->
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/country/benin_dashiki.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+                            <div class="selection_box from_nigeria">
+                                <div class="selection_header"><span>Asoke</span><!--<span class="glyphicon glyphicon-plus"></span>-->
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/country/nigeria_asoke.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+                            <div class="selection_box from_liberia">
+                                <div class="selection_header"><span>Country Cloth</span><!--<span class="glyphicon glyphicon-plus"></span>-->
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/country/liberia_countrycloth.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+                            <div class="selection_box from_mali">
+                                <div class="selection_header"><span>Bogolan</span><!--<span class="glyphicon glyphicon-plus"></span>-->
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/country/mali_bogolan_mudcloth.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+                            <div class="selection_box from_niger">
+                                <div class="selection_header"><span>Djerma</span><!--<span class="glyphicon glyphicon-plus"></span>-->
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/country/niger_djermapeoplecloth.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+                            <div class="selection_box from_sierra_leone">
+                                <div class="selection_header"><span>Country Cloth</span><!--<span class="glyphicon glyphicon-plus"></span>-->
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/country/sierraleone_countrycloth.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+                            <div class="selection_box from_togo">
+                                <div class="selection_header"><span>Batik</span><!--<span class="glyphicon glyphicon-plus"></span>-->
+                                </div>
+                                <div class="selection_img">
+                                    <img src="img/country/togo_batik.png" />
+                                </div>
+                            </div>
+                            <!-- end selection -->
+                        </div>
+
+
+                    </div>
+                    <!-- end mypicks content -->
+                </div>
+                <!-- end mypicks container -->
+            </div>
+            <!-- end right container -->
         </div>
     </div>
 
 </body>
-    <script src="../../js/nav.js"></script>
-    <script src="../../js/game.js"></script>
+<script src="../../js/nav.js"></script>
+<script src="../../js/game.js"></script>
+
 </html>

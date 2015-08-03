@@ -176,6 +176,11 @@ a:active {
   word-break: break-all;
   text-align: left; }
 
+/*
+display: flex;
+    justify-content: center;
+    align-items: center;
+*/
 .expand_out {
   position: absolute;
   top: 0;
@@ -250,7 +255,8 @@ a:active {
 .expand_content {
   width: 70%;
   margin-right: 80px;
-  margin-left: 40px; }
+  margin-left: 40px;
+  margin-top: 50px; }
 
 #landing_content .fake_button {
   background-color: #bbdefb;
@@ -567,7 +573,7 @@ a:active {
   min-height: 500px; }
   @media all and (max-width: 480px) {
     #catalog_display {
-      top: 210px;
+      position: relative;
       width: 100%;
       min-height: 400px; } }
   @media all and (min-width: 481px) and (max-width: 767px) {
@@ -674,40 +680,6 @@ a:active {
 #tab_mypicks {
   background-color: #b2ff59; }
 
-#checkoutnow_btn {
-  position: absolute;
-  z-index: 20;
-  display: flex;
-  background-color: #7cb342;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  border-radius: 50px;
-  -webkit-box-shadow: 0px 3px 3px #607c42;
-  -moz-box-shadow: 0px 3px 3px #607c42;
-  -ms-box-shadow: 0px 3px 3px #607c42;
-  -o-box-shadow: 0px 3px 3px #607c42;
-  box-shadow: 0px 3px 3px #607c42;
-  color: #fff;
-  justify-content: center;
-  align-items: center; }
-  @media all and (max-width: 767px) {
-    #checkoutnow_btn {
-      padding: 8px;
-      width: 150px;
-      height: 50px;
-      font-size: 12pt;
-      top: 560px;
-      right: 10px; } }
-  @media all and (min-width: 768px) {
-    #checkoutnow_btn {
-      padding: 10px;
-      width: 100px;
-      font-size: 10pt;
-      top: 10px;
-      right: 0px; } }
-
 .dug_container_header {
   margin: 0px;
   margin-bottom: 5px;
@@ -726,7 +698,7 @@ a:active {
 
 #left_contaienr {
   position: absolute;
-  top: 60px;
+  top: 0px;
   left: 0px;
   display: inline-block; }
   @media all and (max-width: 480px) {
@@ -750,7 +722,7 @@ a:active {
 
 #right_container {
   position: absolute;
-  top: 60px;
+  top: 0px;
   display: inline-block; }
   @media all and (max-width: 480px) {
     #right_container {
@@ -792,10 +764,37 @@ a:active {
   margin: auto;
   overflow: hidden;
   position: relative;
-  background: url("../../public/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone9.png") no-repeat; }
+  background: url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone9.png") no-repeat; }
   #avatar_content img {
     margin: 0px;
     padding: 0px; }
+
+#checkoutnow_btn {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 12pt;
+  display: flex;
+  background-color: #7cb342;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 3px #607c42;
+  -moz-box-shadow: 0px 3px 3px #607c42;
+  -ms-box-shadow: 0px 3px 3px #607c42;
+  -o-box-shadow: 0px 3px 3px #607c42;
+  box-shadow: 0px 3px 3px #607c42;
+  color: #fff;
+  justify-content: center;
+  align-items: center; }
+  @media all and (max-width: 767px) {
+    #checkoutnow_btn {
+      padding: 6px;
+      height: 40px; } }
+  @media all and (min-width: 768px) {
+    #checkoutnow_btn {
+      padding: 10px; } }
 
 #settings_container {
   display: block;
@@ -938,10 +937,10 @@ a:active {
       display: none; } }
   @media all and (min-width: 768px) and (max-width: 1023px) {
     #mypicks_container {
-      min-height: 300px; } }
+      min-height: 380px; } }
   @media all and (min-width: 1024px) {
     #mypicks_container {
-      min-height: 200px; } }
+      min-height: 330px; } }
   #mypicks_container .dug_container_header {
     background-color: #7cb342; }
 
@@ -955,6 +954,30 @@ a:active {
   @media all and (min-width: 1024px) {
     #mypicks_content {
       overflow-y: auto; } }
+
+#mypicks_nav {
+  position: fixed;
+  width: 200px;
+  float: left; }
+  @media all and (max-width: 767px) {
+    #mypicks_nav {
+      width: 90%;
+      display: block;
+      position: relative; } }
+
+#mypicks_select_content {
+  margin-left: 220px; }
+  @media all and (max-width: 767px) {
+    #mypicks_select_content {
+      width: 100%;
+      display: block;
+      margin-left: 0px; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    #mypicks_select_content {
+      width: 400px; } }
+  @media all and (min-width: 1024px) {
+    #mypicks_select_content {
+      width: 600px; } }
 
 .dug_clothes_box {
   position: absolute; }
@@ -993,6 +1016,19 @@ a:active {
   display: none; }
 
 #clothes_full_test2 {
+  display: none; }
+
+#clothes_bottom_test3,
+#clothes_bottom_test4,
+#clothes_top_test3,
+#clothes_top_test4,
+#clothes_top_test5,
+#clothes_top_test6,
+#clothes_full_test3,
+#clothes_full_test4,
+#clothes_full_test5,
+#clothes_full_test6,
+#clothes_full_test7 {
   display: none; }
 
 #settings_tone_box {
@@ -1068,7 +1104,7 @@ a:active {
   cursor: pointer; }
 
 .hanger_img {
-  background: url(../../public/partials/dressupgame/img/d_images/singlehanger_120.png) no-repeat; }
+  background: url("http://107.170.225.139/partials/dressupgame/img/d_images/singlehanger_120.png") no-repeat; }
 
 .content_to_expand {
   @inlcude transition(all, 0.6s, cubic-bezier(0.77, 0, 0.175, 1), 0.1s); }
@@ -1076,8 +1112,7 @@ a:active {
 #dug_order_container {
   width: 400px;
   margin-left: auto;
-  margin-right: auto;
-  background-color: rgba(255, 138, 128, 0.7); }
+  margin-right: auto; }
   #dug_order_container h1, #dug_order_container h2, #dug_order_container h3, #dug_order_container h4, #dug_order_container h5, #dug_order_container h6, #dug_order_container legend {
     text-align: center; }
 
@@ -1090,13 +1125,12 @@ a:active {
     margin-left: 20px;
     margin-bottom: 10px; }
   #dug_order_container form input {
-    width: 50px;
-    margin-left: 20px;
     margin-bottom: 10px; }
   #dug_order_container form button {
     margin-bottom: 5px;
     border: none;
-    outline: none; }
+    outline: none;
+    margin-left: 70px; }
   #dug_order_container form button[type=reset] {
     background-color: #fefcb3;
     -webkit-box-shadow: 0px 1px 1px #ffd740;

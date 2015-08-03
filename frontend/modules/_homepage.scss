@@ -31,12 +31,15 @@
     word-break: break-all;
     text-align: left;
 }
+/*
+display: flex;
+    justify-content: center;
+    align-items: center;
+*/
 
 .expand_out {
     position: absolute;
     top: 0;
-    
-    
     
     right: -($max-expand-width);
     padding-top: 60px;
@@ -118,7 +121,6 @@
     z-index: 20;
 }
 
-
 #landing_expanded {
     //position: relative;
     
@@ -175,6 +177,8 @@
     width: 70%;
     margin-right: 80px;
     margin-left: 40px;
+    
+    margin-top: 50px;
 }
 
 

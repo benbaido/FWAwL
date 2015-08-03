@@ -123,46 +123,6 @@
     background-color: $culture-base-color;
 }
 
-#checkoutnow_btn {
-    position: absolute;
-    z-index: 20;
-    
-    //width: 100px;
-    
-    display: flex;
-    background-color: $culture-dark-color;
-    
-    @include border-radius(50px);
-    @include box-shadow(0px, 3px, 3px, #607c42);
-    color: #fff;
-    
-    justify-content: center;
-    align-items: center;
-    
-    //line-height: 2;
-    //vertical-align: middle;
-    
-    @media all and (max-width: 767px) {
-    //phone
-        padding: 8px;
-        width: 150px;
-        height: 50px;
-        font-size: 12pt;
-        
-        top: 560px;
-        right: 10px;
-    }
-    @media all and (min-width: 768px) {
-            //tablet
-        padding: 10px;
-        width: 100px;
-        font-size: 10pt;
-        
-        top: 10px;
-        right: 0px;
-    }
-}
-
 .dug_container_header {
     margin: 0px;
     margin-bottom: 5px;
@@ -189,7 +149,7 @@
 
 #left_contaienr {
     position: absolute;
-    top: 60px;
+    top: 0px;
     left: 0px;
     display: inline-block;
     
@@ -222,7 +182,7 @@
 #right_container {
     position: absolute;
     
-    top: 60px;
+    top: 0px;
     display: inline-block;
     
     @media all and (max-width: 480px) {
@@ -286,7 +246,7 @@
     
     position: relative;
     
-    background: url('../../public/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone9.png') no-repeat;
+    background: url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone9.png") no-repeat;
     
     @media all and (max-width: 480px) {
         
@@ -304,6 +264,49 @@
     img {
         margin: 0px;
         padding: 0px;
+    }
+}
+
+#checkoutnow_btn {
+    //position: absolute;
+    //z-index: 20;
+    
+    //width: 100px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 12pt;
+    display: flex;
+    background-color: $culture-dark-color;
+    
+    @include border-radius(10px);
+    @include box-shadow(0px, 3px, 3px, #607c42);
+    color: #fff;
+    
+    justify-content: center;
+    align-items: center;
+    
+    //line-height: 2;
+    //vertical-align: middle;
+    
+    @media all and (max-width: 767px) {
+    //phone
+        padding: 6px;
+        //width: 150px;
+        
+        height: 40px;
+        //font-size: 10pt;
+        
+        //top: 560px;
+        //right: 10px;
+    }
+    @media all and (min-width: 768px) {
+            //tablet
+        padding: 10px;
+        //width: 100px;
+        
+        
+        //top: 10px;
+        //right: 0px;
     }
 }
 
@@ -539,11 +542,11 @@
         display: none;
     }
     @media all and (min-width: 768px) and (max-width: 1023px) {
-        min-height: 300px;
+        min-height: 380px;
         //max-height: 480px;
     }
     @media all and (min-width: 1024px) {
-        min-height: 200px;
+        min-height: 330px;
         //max-height: 380px;
     }
     
@@ -572,6 +575,41 @@
     }
 }
 
+#mypicks_nav {
+    //display: inline-block;
+    position: fixed;
+    width: 200px;
+    float: left;
+    @media all and (max-width: 767px) {
+        width: 90%;
+        display: block;
+        position: relative;
+        
+    }
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        
+    }
+    @media all and (min-width: 1024px) {
+        
+    }
+}
+
+#mypicks_select_content{
+    
+    margin-left: 220px;
+    
+    @media all and (max-width: 767px) {
+        width: 100%;
+        display: block;
+        margin-left: 0px;
+    }
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        width: 400px;
+    }
+    @media all and (min-width: 1024px) {
+        width: 600px;
+    }
+}
 
 .dug_clothes_box {
     position: absolute;
@@ -636,6 +674,20 @@
 }
 
 #clothes_full_test2 {
+    display: none;
+}
+
+#clothes_bottom_test3,
+#clothes_bottom_test4,
+#clothes_top_test3,
+#clothes_top_test4,
+#clothes_top_test5,
+#clothes_top_test6,
+#clothes_full_test3,
+#clothes_full_test4,
+#clothes_full_test5,
+#clothes_full_test6,
+#clothes_full_test7 {
     display: none;
 }
 
@@ -750,7 +802,7 @@
 }
 
 .hanger_img {
-    background: url(../../public/partials/dressupgame/img/d_images/singlehanger_120.png) no-repeat;
+    background: url("http://107.170.225.139/partials/dressupgame/img/d_images/singlehanger_120.png") no-repeat;
 }
 
 .content_to_expand {
