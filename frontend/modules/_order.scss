@@ -10,12 +10,56 @@
     //background-color: opacity($dressup-light-color, 0.7);
 }
 
-#order_box {
-    
-}
 
-#order_items_box {
+
+#dug_order_container {
+    position: relative;
+    margin-top: 50px;
     
+    #order_getitmade_pic {
+        
+        
+        
+        //-webkit-transform: rotate(45deg);
+        
+        @media all and (max-width: 767px) {
+            position: relative;
+            padding: 0px;
+            width: 135px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        @media all and (min-width: 768px) {
+            position: absolute;
+            padding: 0px;
+            top: -60px;
+            left: -40px;
+            @include rotate-transform(-15deg);
+        }
+    }
+    
+    #order_box {
+        //background-color: lightcoral;
+        width: 100%;
+        min-height: 100px;
+    }
+    #order_items_box {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        
+        @media all and (max-width: 767px) {
+            
+        }
+        @media all and (min-width: 768px) {
+            width: 85%;
+            //display: flex;
+            //align-content: center;
+            text-align: center;
+            
+        }
+    }
 }
 
 #dug_order_container form {
@@ -34,7 +78,7 @@
     }
     
     select {
-        width: 70%;
+        //width: 70%;
         margin-left: 20px;
         margin-bottom: 10px;
     }

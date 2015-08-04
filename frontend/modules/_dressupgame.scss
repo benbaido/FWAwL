@@ -577,37 +577,32 @@
 
 #mypicks_nav {
     //display: inline-block;
-    position: fixed;
-    width: 200px;
-    float: left;
+    position: block;
+    width: 100%;
+    //float: left;
     @media all and (max-width: 767px) {
         width: 90%;
         display: block;
         position: relative;
         
     }
-    @media all and (min-width: 768px) and (max-width: 1023px) {
-        
-    }
-    @media all and (min-width: 1024px) {
-        
-    }
+    
 }
 
 #mypicks_select_content{
-    
-    margin-left: 220px;
+    width: 100%;
+    //margin-left: 220px;
     
     @media all and (max-width: 767px) {
-        width: 100%;
+        
         display: block;
         margin-left: 0px;
     }
     @media all and (min-width: 768px) and (max-width: 1023px) {
-        width: 400px;
+        //width: 400px;
     }
     @media all and (min-width: 1024px) {
-        width: 600px;
+        //width: 600px;
     }
 }
 
@@ -692,7 +687,7 @@
 }
 
 #settings_tone_box {
-    //display: inline-block;
+    display: inline-block;
     float: left;
     
     height: 70px;
@@ -700,23 +695,36 @@
     margin-right: 10px;
     
     //background-color: lightgray;
-    
-    @media all and (max-width: 767px) {
-        width: 170px;
+    @media all and (max-width: 480px) {
+        display: block;
+        width: 80%;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media all and (min-width: 481px) and (max-width: 767px) {
+        display: block;
+        width: 100%;
+        height: 100px;
     }
     @media all and (min-width: 768px) {
-        width: 140px;
+        width: 100px;
+        height: 250px;
     }
 }
 
 .setting_tone_pick {
     display: inline-block;
     
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     
     @include border-radius(50px);
     
+    @media all and (max-width: 767px) {
+        width: 45px;
+        height: 45px;
+    }
     //background-color: chocolate;
     
     cursor: pointer;
@@ -768,16 +776,23 @@
     //height: 100%;
     //background-color: lightpink;
     
+    margin-left: auto;
+    margin-right: auto;
+    
     img {
         margin-left: auto;
         margin-right: auto;
     }
-    
-    @media all and (max-width: 767px) {
-        width: 120px;
+    @media all and (max-width: 480px) {
+        display: block;
+        width: 80%;
+    }
+    @media all and (min-width: 481px) and (max-width: 767px) {
+        display: block;
+        width: 100%;
     }
     @media all and (min-width: 768px) {
-        width: 100px;
+        width: 140px;
     }
 }
 
@@ -785,8 +800,8 @@
     padding: 0px;
     display: inline-block;
     
-    width: 35px;
-    height: 35px;
+    width: 65px;
+    height: 65px;
     
     margin: auto;
     

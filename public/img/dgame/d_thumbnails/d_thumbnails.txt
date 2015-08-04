@@ -1,1 +1,0 @@
-Images in d_thumbails is sized as a preview for the default viewport (mobile device) for 320x470
