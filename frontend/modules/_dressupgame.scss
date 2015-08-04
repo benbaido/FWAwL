@@ -216,7 +216,9 @@
     display: block;
     height: 580px;
     
-    background-color: $landing-light-color;
+    //background-color: $landing-light-color;
+    background-color: #fff;
+    
     @media all and (max-width: 480px) {
         
     }

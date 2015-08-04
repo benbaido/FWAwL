@@ -752,7 +752,7 @@ display: flex;
 #avatar_container {
   display: block;
   height: 580px;
-  background-color: #bbdefb; }
+  background-color: #fff; }
   #avatar_container .dug_container_header {
     background-color: #448aff; }
 
