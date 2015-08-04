@@ -42,8 +42,16 @@ $(document).ready(function(){
     $skin_tone_10_btn = $('#skin_tone_10');
     
     
+    //order page
+    $checkitoutbtn = $('#checkoutnow_btn');
+    $order_items_box = $('#order_items_box');
+    //item list for the order page
+    $itemlist = '';
+    
+    
     //var hidenumber = '500px';
     
+    /*
     var avatar_element = document.getElementById('left_contaienr');
     var options_element = document.getElementById('options_container');
     var rack_element = document.getElementById('myrack_container');
@@ -63,6 +71,8 @@ $(document).ready(function(){
     var options_display = options_style.getPropertyValue('display');
     var rack_display = rack_style.getPropertyValue('display');
     var picks_display = picks_style.getPropertyValue('display');
+    
+    */
     
     //var avatar_width = landing_style.getPropertyValue('width');
     //var options_width = dressup_style.getPropertyValue('width');
@@ -199,7 +209,6 @@ $(document).ready(function(){
             $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone01_FAE7D0.png") no-repeat');
         }
         
-        
     });     //end tone
     
     $skin_tone_2_btn.click(function(){
@@ -209,7 +218,6 @@ $(document).ready(function(){
         else if($avatar_content.hasClass('is_male_avatar')) {
             $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone02_FFCC99.png") no-repeat');
         }
-        
         
     });     //end tone
     
@@ -221,7 +229,6 @@ $(document).ready(function(){
             $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone03_FEB186.png") no-repeat');
         }
         
-        
     });     //end tone
     
     $skin_tone_4_btn.click(function(){
@@ -231,7 +238,6 @@ $(document).ready(function(){
         else if($avatar_content.hasClass('is_male_avatar')) {
             $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone04_B98865.png") no-repeat');
         }
-        
         
     });     //end tone
     
@@ -243,7 +249,6 @@ $(document).ready(function(){
             $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone05_aa724B.png") no-repeat');
         }
         
-        
     });
     
     $skin_tone_6_btn.click(function(){
@@ -253,7 +258,6 @@ $(document).ready(function(){
         else if($avatar_content.hasClass('is_male_avatar')) {
             $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone06_C18e74.png") no-repeat');
         }
-        
         
     });     //end tone
     
@@ -265,7 +269,6 @@ $(document).ready(function(){
             $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone07_1935D37.png") no-repeat');
         }
         
-        
     });     //end tone
     
     $skin_tone_8_btn.click(function(){
@@ -276,7 +279,6 @@ $(document).ready(function(){
             $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone08_7B4B2A.png") no-repeat');
         }
         
-        
     });     //end tone
     
     $skin_tone_9_btn.click(function(){
@@ -286,7 +288,6 @@ $(document).ready(function(){
         else if($avatar_content.hasClass('is_male_avatar')) {
             $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone09_573719.png") no-repeat');
         }
-        
         
     });     //end tone
     
@@ -299,9 +300,6 @@ $(document).ready(function(){
         }
         
     });     //end tone
-        
-        
-        
     
     //other setting buttons
     $setting_male_btn.click(function(){
@@ -411,9 +409,6 @@ $(document).ready(function(){
         else if($(this).parent('#clothes_browngreyskirt').length){
             $avatar_content.find('#clothes_bottom_test4').toggle().toggleClass('clothes_puton');
         }
-        
-        
-        
         
     });
     
@@ -774,10 +769,55 @@ $(document).ready(function(){
         
     });
     
+    //var picks_items_array = [];
+    
+    
+    $picks_container.on('click', '.glyphicon', function(e){
+        e.preventDefault();
+        //var picks_itemlist = '';
+        //var imgsrc = '';
+        
+        console.log("mypicks - got the click");
+        console.log($(this));
+        
+        if($(this).hasClass('glyphicon-plus')) {
+            $(this).removeClass('glyphicon-plus');
+            $(this).addClass('glyphicon-minus');
+            
+            console.log("mypicks - added minus");
+            
+        }
+        else if($(this).hasClass('glyphicon-minus')) {
+            $(this).removeClass('glyphicon-minus');
+            $(this).addClass('glyphicon-plus');
+            
+            console.log("mypicks - added plus");
+        }
+        
+        /*
+        $picks_container.find('.selection_box').each(function(){
+            if($(this).hasClass('glyphicon-minus')) {
+                imgsrc = $(this).find('.selection_img img').attr('src');
+                picks_itemlist += '<div class="selection_box"><div class="selection_header"><span></span></div><div class="selection_img"><img src="'+ imgsrc +'" /></div></div>';
+                console.log(imgsrc);
+                
+            }
+            
+            //add to item list
+            console.log('pickslist: ' + picks_itemlist);
+            itemlist += picks_itemlist;
+            console.log('itemslist: ' + itemlist);
+            
+            
+        }); //end hide */
+        
+    });     //end on glyphicon for picks container
+    
+    
 }); //end document.ready
 
 $(document).on('click', '.dressup_tab', function(){
-    
+    /*
     var avatar_element = document.getElementById('left_contaienr');
     var options_element = document.getElementById('options_container');
     var rack_element = document.getElementById('myrack_container');
@@ -798,6 +838,8 @@ $(document).on('click', '.dressup_tab', function(){
     var rack_display = rack_style.getPropertyValue('display');
     var picks_display = picks_style.getPropertyValue('display');
     
+    */
+    
     if(window.innerWidth < 768) {
         $avatar_tab.click(function(){
             $to_expanded.css('display', 'none');
@@ -816,8 +858,8 @@ $(document).on('click', '.dressup_tab', function(){
                 $picks_container.removeClass('is_expanded');
             }
             
-            console.log('avatar left: ' + avatar_left);
-            console.log('avatar display: ' + avatar_display);
+            //console.log('avatar left: ' + avatar_left);
+            //console.log('avatar display: ' + avatar_display);
         });
         
         $options_tab.click(function(){
@@ -838,8 +880,8 @@ $(document).on('click', '.dressup_tab', function(){
                 $picks_container.removeClass('is_expanded');
             }
             
-            console.log('options left: ' + options_left);
-            console.log('options display: ' + options_display);
+            //console.log('options left: ' + options_left);
+            //console.log('options display: ' + options_display);
         });
         
         $rack_tab.click(function(){
@@ -860,8 +902,8 @@ $(document).on('click', '.dressup_tab', function(){
                 $picks_container.removeClass('is_expanded');
             }
             
-            console.log('rack left: ' + rack_left);
-            console.log('rack display: ' + rack_display);
+            //console.log('rack left: ' + rack_left);
+            //console.log('rack display: ' + rack_display);
         });
         
         $picks_tab.click(function(){
@@ -881,8 +923,8 @@ $(document).on('click', '.dressup_tab', function(){
                 $picks_container.addClass('is_expanded');
             }
             
-            console.log('picks left: ' + picks_left);
-            console.log('picks display: ' + picks_display);
+            //console.log('picks left: ' + picks_left);
+            //console.log('picks display: ' + picks_display);
         });
     }
     else{
@@ -896,6 +938,24 @@ $(document).on('click', '.dressup_tab', function(){
     }
 });
 
-//$(document).on('', '', function(){
-    //if()
-//});
+$(document).on('click', '#checkoutnow_btn', function(){
+    
+    var pick_items = '';
+    var imgsrc = '';
+    
+    $picks_container.find('.selection_box').each(function(){
+        if($('#mypicks_select_content > .selection_box > .glyphicon').hasClass('glyphicon-minus')) {
+            imgsrc = $(this).find('.selection_img img').attr('src');
+            pick_items += '<div class="selection_box"><div class="selection_header"><span></span></div><div class="selection_img"><img src="'+ imgsrc +'" /></div></div>';
+            console.log('imgsrc: ' + imgsrc);
+            
+            console.log('pickslist: ' + pick_items);
+            itemlist += pick_items;
+            console.log('itemslist: ' + itemlist);
+        }
+    });
+    
+    $order_items_box.html(itemlist);
+    
+    
+});
