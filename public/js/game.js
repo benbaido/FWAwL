@@ -347,6 +347,9 @@ $(document).ready(function(){
         
     });
     
+    //make clothes draggable
+    $('.dug_clothes_box').draggable();
+    
     //dressing the doll
     $options_container.on('click', '.selection_img', function(e){
         e.preventDefault();
