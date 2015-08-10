@@ -203,100 +203,100 @@ $(document).ready(function(){
     //change skin tones
     $skin_tone_1_btn.click(function(){
         if($avatar_content.hasClass('is_female_avatar')){
-            $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone1.png") no-repeat');
+            $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone1.png") no-repeat');
         }
         else if($avatar_content.hasClass('is_male_avatar')) {
-            $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone01_FAE7D0.png") no-repeat');
+            $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone01_FAE7D0.png") no-repeat');
         }
         
     });     //end tone
     
     $skin_tone_2_btn.click(function(){
         if($avatar_content.hasClass('is_female_avatar')){
-            $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone2.png") no-repeat');
+            $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone2.png") no-repeat');
         }
         else if($avatar_content.hasClass('is_male_avatar')) {
-            $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone02_FFCC99.png") no-repeat');
+            $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone02_FFCC99.png") no-repeat');
         }
         
     });     //end tone
     
     $skin_tone_3_btn.click(function(){
         if($avatar_content.hasClass('is_female_avatar')){
-            $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone3.png") no-repeat');
+            $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone3.png") no-repeat');
         }
         else if($avatar_content.hasClass('is_male_avatar')) {
-            $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone03_FEB186.png") no-repeat');
+            $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone03_FEB186.png") no-repeat');
         }
         
     });     //end tone
     
     $skin_tone_4_btn.click(function(){
         if($avatar_content.hasClass('is_female_avatar')){
-            $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone4.png") no-repeat');
+            $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone4.png") no-repeat');
         }
         else if($avatar_content.hasClass('is_male_avatar')) {
-            $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone04_B98865.png") no-repeat');
+            $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone04_B98865.png") no-repeat');
         }
         
     });     //end tone
     
     $skin_tone_5_btn.click(function(){
         if($avatar_content.hasClass('is_female_avatar')){
-            $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone5.png") no-repeat');
+            $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone5.png") no-repeat');
         }
         else if($avatar_content.hasClass('is_male_avatar')) {
-            $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone05_aa724B.png") no-repeat');
+            $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone05_aa724B.png") no-repeat');
         }
         
     });
     
     $skin_tone_6_btn.click(function(){
         if($avatar_content.hasClass('is_female_avatar')){
-            $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone6.png") no-repeat');
+            $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone6.png") no-repeat');
         }
         else if($avatar_content.hasClass('is_male_avatar')) {
-            $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone06_C18e74.png") no-repeat');
+            $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone06_C18e74.png") no-repeat');
         }
         
     });     //end tone
     
     $skin_tone_7_btn.click(function(){
         if($avatar_content.hasClass('is_female_avatar')){
-            $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone7.png") no-repeat');
+            $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone7.png") no-repeat');
         }
         else if($avatar_content.hasClass('is_male_avatar')) {
-            $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone07_1935D37.png") no-repeat');
+            $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone07_1935D37.png") no-repeat');
         }
         
     });     //end tone
     
     $skin_tone_8_btn.click(function(){
         if($avatar_content.hasClass('is_female_avatar')){
-            $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone8.png") no-repeat');
+            $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone8.png") no-repeat');
         }
         else if($avatar_content.hasClass('is_male_avatar')) {
-            $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone08_7B4B2A.png") no-repeat');
+            $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone08_7B4B2A.png") no-repeat');
         }
         
     });     //end tone
     
     $skin_tone_9_btn.click(function(){
         if($avatar_content.hasClass('is_female_avatar')){
-            $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone9.png") no-repeat');
+            $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone9.png") no-repeat');
         }
         else if($avatar_content.hasClass('is_male_avatar')) {
-            $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone09_573719.png") no-repeat');
+            $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone09_573719.png") no-repeat');
         }
         
     });     //end tone
     
     $skin_tone_10_btn.click(function(){
         if($avatar_content.hasClass('is_female_avatar')){
-            $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone10.png") no-repeat');
+            $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone10.png") no-repeat');
             }
         else if($avatar_content.hasClass('is_male_avatar')) {
-            $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone10_483728.png") no-repeat');
+            $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone10_483728.png") no-repeat');
         }
         
     });     //end tone
@@ -311,7 +311,7 @@ $(document).ready(function(){
             $avatar_content.addClass('is_male_avatar');
         }
         
-        $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone09_573719.png") no-repeat');
+        $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone09_573719.png") no-repeat');
         
         //hide all the divs in the avatar content with the female tag
         
@@ -327,7 +327,7 @@ $(document).ready(function(){
             //hide all the divs in the avatar content with the male tag
         }
         
-        $avatar_content.css('background', 'url("http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone9.png") no-repeat');
+        $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone9.png") no-repeat');
         
     });
     
