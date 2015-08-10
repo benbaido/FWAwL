@@ -1,7 +1,16 @@
 198.199.102.40
 ^ new IP for server
 
+//link to logo for dressupgame folder
+../../public/img/logos/d_logo_72.png
+^for logo_box
+
+../../public/img/logos/logo03_200x43.png
+
+
 http://107.170.225.139/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone1.png
+
+http://198.199.102.40/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone9.png
 
 ^ for female tones
 
@@ -26,6 +35,12 @@ http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_
 http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone09_573719.png
 
 http://107.170.225.139/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone10_483728.png
+
+
+//hanger link
+http://198.199.102.40/partials/dressupgame/img/d_images/singlehanger_120.png
+
+
 
 
 links to slideshow code
