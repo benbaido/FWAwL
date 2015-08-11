@@ -8,6 +8,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsiveslides.css" />
+        <script src="js/responsiveslides.min.js"></script>
         <title>From West Africa with Love</title>
     </head>
     <body>
@@ -98,9 +100,19 @@
                     
                     <div id="landing_dressup_game" class="fake_button">
                         <a href="partials/dressupgame/play.html"><p>Dress up game</p></a>
-                    </div> <!--
+                    </div> 
                     <div id="landing_slideshow">
-                    </div> -->
+                        <ul class="rslides">
+                            <li><img src="img/map/map_w_w+africa_sectioned_600x397_pixels.png" alt="West Africa">West Africa</li>
+                            <li><img src="img/map/map_w_ghana_612x397_pixels.png" alt="Ghana">Ghana</li>
+                            <li><img src="img/map/map_w_niger_600x397_pixels.png" alt="Niger">Niger</li>
+                            <li><img src="img/map/map_w_mali_612x792_pixels.png" alt="Mali">Mali</li>
+                            <li><img src="img/map/map_w_gambia_600x397_pixels.png" alt="The Gambia">The Gambia</li>
+                            <li><img src="img/map/map_capeverde_map_w_cape_verde_600x397_pixels.png" alt="Cape Verde">Cape Verde</li>
+                            <li><img src="img/map/map_w_guinea+bissai_612x792_pixels.png" alt="Guinea Bissaiu">Guinea Bissaiu</li>
+                            <li><img src="img/map/map_w_senegal_600x397_pixels.png" alt="Senegal">Senegal</li>
+                        </ul>
+                    </div>
                 </div>
                 
             </div> <!--end landing expanded -->
@@ -144,4 +156,9 @@
     </body>
     <script src="js/mobilehome.js"></script>
     <script src="js/nav.js"></script>
+    <script>
+        $(function() {
+            $(".rslides").responsiveSlides();
+        });
+    </script>
 </html>

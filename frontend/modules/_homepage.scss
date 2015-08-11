@@ -155,8 +155,43 @@ display: flex;
     //position: absolute;
     //bottom: 100px;
     width: 100%;
-    min-height: 300px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
     background-color: cornflowerblue;
+    @media all and (max-width: 480px) {
+        min-height: 300px;
+    }
+    @media all and (min-width: 481px) and (max-width: 767px) {
+        min-height: 300px;
+    }
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        min-height: 300px;
+    }
+    @media all and (min-width: 1024px) {
+        width: 600px;
+        min-height: 300px;
+    }
+    
+    img {
+        @media all and (max-width: 480px) {
+            //min-height: 300px;
+        }
+        @media all and (min-width: 481px) and (max-width: 767px) {
+            //min-height: 300px;
+            width: 90%;
+            height: 90%;
+        }
+        @media all and (min-width: 768px) and (max-width: 1023px) {
+            width: 60%;
+            height: 60%;
+        }
+        @media all and (min-width: 1024px) {
+            width: 60%;
+            height: 60%;
+        }
+    }
 }
 
 #dressup_expanded {
