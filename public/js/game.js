@@ -750,6 +750,9 @@ $(document).ready(function(){
     $body_size_box.find('.size_icon_male').each(function(){
         $(this).hide();
     });
+    $options_container.find('.clothes_male').each(function(){
+        $(this).hide();
+    });
     
     //other setting buttons
     $setting_male_btn.click(function(){
@@ -1266,6 +1269,36 @@ $(document).ready(function(){
         }
         else if($(this).parent('#clothes_browngreyskirt').length){
             $avatar_content.find('#clothes_bottom_test4').toggle().toggleClass('clothes_puton');
+        } //this is where angela's clothes come in --------------------------------------
+        else if($(this).parent('#clothes_straight_tunic').length){
+            $avatar_content.find('#clothes_top_male_oval_tunic14').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#clothes_oval_tunic').length){
+            $avatar_content.find('#clothes_top_male_oval_tunic14').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#clothes_straight_dress').length){
+            $avatar_content.find('#clothes_full_01_female_straight_dress').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#clothes_daimond_dress').length){
+            $avatar_content.find('#clothes_full_10_female_daimond_dress').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#oval_leggings').length){
+            $avatar_content.find('#clothes_leggings_oval_01').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#oval_leggings_pattern').length){
+            $avatar_content.find('#clothes_leggings_oval_pattern').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#oval_leggings_pattern01').length){
+            $avatar_content.find('#clothes_leggings_oval_pattern01').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#straight_leggings').length){
+            $avatar_content.find('#clothes_leggings_straight_01').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#straight_leggings_pattern').length){
+            $avatar_content.find('#clothes_leggings_straight_pattern').toggle().toggleClass('clothes_puton');
+        }
+        else if($(this).parent('#straight_leggings_pattern01').length){
+            $avatar_content.find('#clothes_leggings_straight_pattern01').toggle().toggleClass('clothes_puton');
         }
         
     });
