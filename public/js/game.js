@@ -31,6 +31,7 @@ $(document).ready(function(){
     $avatar_content = $('#avatar_content');
     
     //body types
+    $body_size_box = $('#body_sizes_box');
     $body_type_female_straight_box = $('#size_female_straight');
     $body_type_female_pear_box = $('#size_female_pear');
     $body_type_female_spoon_box = $('#size_female_spoon');
@@ -746,6 +747,10 @@ $(document).ready(function(){
         
     });     //end tone
     
+    $body_size_box.find('.size_icon_male').each(function(){
+        $(this).hide();
+    });
+    
     //other setting buttons
     $setting_male_btn.click(function(){
         if($avatar_content.hasClass('is_female_avatar')){
@@ -758,6 +763,18 @@ $(document).ready(function(){
         
         $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/dressup_d-body_type_01_male_straight_skintone09_573719.png") no-repeat');
         
+        $body_size_box.find('.size_icon_male').each(function(){
+            $(this).show();
+        });
+        $body_size_box.find('.size_icon_female').each(function(){
+            $(this).hide();
+        });
+        $options_container.find('.clothes_female').each(function(){
+            $(this).hide();
+        });
+        $options_container.find('.clothes_male').each(function(){
+            $(this).show();
+        });
         //hide all the divs in the avatar content with the female tag
         
     });
@@ -774,10 +791,28 @@ $(document).ready(function(){
         
         $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/d_body_type_placeholder_260_tone9.png") no-repeat');
         
+        $body_size_box.find('.size_icon_female').each(function(){
+            $(this).show();
+        });
+        $body_size_box.find('.size_icon_male').each(function(){
+            $(this).hide();
+        });
+        
+        $options_container.find('.clothes_female').each(function(){
+            $(this).show();
+        });
+        $options_container.find('.clothes_male').each(function(){
+            $(this).hide();
+        });
+        
     });
     
     $setting_reset_btn.click(function(){
-        $('#avatar_content > div').hide();
+        $('#avatar_content > .dug_clothes_box').hide();
+        //$avatar_content.find('.size_icon').each(function(){
+        //   $(this).show();
+        //});
+        //$('#avatar_content > #body_sizes_box').show();
     });
     
     $setting_png_btn.click(function(){
@@ -795,6 +830,375 @@ $(document).ready(function(){
     //body size icons
     //$avatar_content
     $(document).on('click', '#body_sizes_box', function(){
+        
+        $body_type_female_straight_box.click(function(){
+            if($avatar_content.hasClass('is_female_avatar')) {
+                if(!$avatar_content.hasClass('is_straight_body')){
+                    $avatar_content.addClass('is_straight_body');
+                    $body_type_female_straight_box.hide();
+                }
+                
+                if($avatar_content.hasClass('is_pear_body')){
+                    $avatar_content.removeClass('is_pear_body');
+                    $body_type_female_pear_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_spoon_body')){
+                    $avatar_content.removeClass('is_spoon_body');
+                    $body_type_female_spoon_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_hourglass_body')){
+                    $avatar_content.removeClass('is_hourglass_body');
+                    $body_type_female_hourglass_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_triangle_body')){
+                    $avatar_content.removeClass('is_triangle_body');
+                    $body_type_female_triangle_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_oval_body')){
+                    $avatar_content.removeClass('is_oval_body');
+                    $body_type_female_oval_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_daimond_body')){
+                    $avatar_content.removeClass('is_daimond_body');
+                    $body_type_female_daimond_box.show();
+                }
+                
+                $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/female/straight_301/dressup_d_body_type01_female_straight_skintone10_483728.png") no-repeat');
+                
+            }
+        });
+        
+        $body_type_female_pear_box.click(function(){
+            if($avatar_content.hasClass('is_female_avatar')) {
+                if(!$avatar_content.hasClass('is_pear_body')){
+                    $avatar_content.addClass('is_pear_body');
+                    $body_type_female_pear_box.hide();
+                }
+                
+                if($avatar_content.hasClass('is_straight_body')){
+                    $avatar_content.removeClass('is_straight_body');
+                    $body_type_female_straight_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_spoon_body')){
+                    $avatar_content.removeClass('is_spoon_body');
+                    $body_type_female_spoon_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_hourglass_body')){
+                    $avatar_content.removeClass('is_hourglass_body');
+                    $body_type_female_hourglass_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_triangle_body')){
+                    $avatar_content.removeClass('is_triangle_body');
+                    $body_type_female_triangle_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_oval_body')){
+                    $avatar_content.removeClass('is_oval_body');
+                    $body_type_female_oval_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_daimond_body')){
+                    $avatar_content.removeClass('is_daimond_body');
+                    $body_type_female_daimond_box.show();
+                }
+                
+                $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/female/pear_301/dressup_d_body_type02_female_pear_skintone10_483728.png") no-repeat');
+                
+            }
+        });
+        
+        $body_type_female_spoon_box.click(function(){
+            if($avatar_content.hasClass('is_female_avatar')) {
+                if(!$avatar_content.hasClass('is_spoon_body')){
+                    $avatar_content.addClass('is_spoon_body');
+                    $body_type_female_spoon_box.hide();
+                }
+                
+                if($avatar_content.hasClass('is_straight_body')){
+                    $avatar_content.removeClass('is_straight_body');
+                    $body_type_female_straight_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_pear_body')){
+                    $avatar_content.removeClass('is_pear_body');
+                    $body_type_female_pear_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_hourglass_body')){
+                    $avatar_content.removeClass('is_hourglass_body');
+                    $body_type_female_hourglass_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_triangle_body')){
+                    $avatar_content.removeClass('is_triangle_body');
+                    $body_type_female_triangle_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_oval_body')){
+                    $avatar_content.removeClass('is_oval_body');
+                    $body_type_female_oval_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_daimond_body')){
+                    $avatar_content.removeClass('is_daimond_body');
+                    $body_type_female_daimond_box.show();
+                }
+                
+                $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/female/spoon_301/dressup_d_body_type03_female_spoon_skintone10_483728.png") no-repeat');
+                
+            }
+        });
+        
+        $body_type_female_hourglass_box.click(function(){
+            if($avatar_content.hasClass('is_female_avatar')) {
+                if(!$avatar_content.hasClass('is_hourglass_body')){
+                    $avatar_content.addClass('is_hourglass_body');
+                    $body_type_female_hourglass_box.hide();
+                }
+                
+                if($avatar_content.hasClass('is_straight_body')){
+                    $avatar_content.removeClass('is_straight_body');
+                    $body_type_female_straight_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_pear_body')){
+                    $avatar_content.removeClass('is_pear_body');
+                    $body_type_female_pear_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_spoon_body')){
+                    $avatar_content.removeClass('is_spoon_body');
+                    $body_type_female_spoon_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_triangle_body')){
+                    $avatar_content.removeClass('is_triangle_body');
+                    $body_type_female_triangle_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_oval_body')){
+                    $avatar_content.removeClass('is_oval_body');
+                    $body_type_female_oval_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_daimond_body')){
+                    $avatar_content.removeClass('is_daimond_body');
+                    $body_type_female_daimond_box.show();
+                }
+                
+                $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/female/hourglass_301/dressup_d_body_type04_female_hourglass_skintone10_483728.png") no-repeat');
+                
+            }
+        });
+        
+        $body_type_female_triangle_box.click(function(){
+            if($avatar_content.hasClass('is_female_avatar')) {
+                if(!$avatar_content.hasClass('is_triangle_body')){
+                    $avatar_content.addClass('is_triangle_body');
+                    $body_type_female_triangle_box.hide();
+                }
+                
+                if($avatar_content.hasClass('is_straight_body')){
+                    $avatar_content.removeClass('is_straight_body');
+                    $body_type_female_straight_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_pear_body')){
+                    $avatar_content.removeClass('is_pear_body');
+                    $body_type_female_pear_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_spoon_body')){
+                    $avatar_content.removeClass('is_spoon_body');
+                    $body_type_female_spoon_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_hourglass_body')){
+                    $avatar_content.removeClass('is_hourglass_body');
+                    $body_type_female_hourglass_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_oval_body')){
+                    $avatar_content.removeClass('is_oval_body');
+                    $body_type_female_oval_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_daimond_body')){
+                    $avatar_content.removeClass('is_daimond_body');
+                    $body_type_female_daimond_box.show();
+                }
+                
+                $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/female/triangle_301/d_body_type05_female_triangle_skintone10_483728.png") no-repeat');
+                
+            }
+        });
+        
+        $body_type_female_oval_box.click(function(){
+            if($avatar_content.hasClass('is_female_avatar')) {
+                if(!$avatar_content.hasClass('is_oval_body')){
+                    $avatar_content.addClass('is_oval_body');
+                    $body_type_female_oval_box.hide();
+                }
+                
+                if($avatar_content.hasClass('is_straight_body')){
+                    $avatar_content.removeClass('is_straight_body');
+                    $body_type_female_straight_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_pear_body')){
+                    $avatar_content.removeClass('is_pear_body');
+                    $body_type_female_pear_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_spoon_body')){
+                    $avatar_content.removeClass('is_spoon_body');
+                    $body_type_female_spoon_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_hourglass_body')){
+                    $avatar_content.removeClass('is_hourglass_body');
+                    $body_type_female_hourglass_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_triangle_body')){
+                    $avatar_content.removeClass('is_triangle_body');
+                    $body_type_female_triangle_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_daimond_body')){
+                    $avatar_content.removeClass('is_daimond_body');
+                    $body_type_female_daimond_box.show();
+                }
+                
+                $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/female/oval_301/d_body_type06_female_oval_skintone10_483728.png") no-repeat');
+                
+            }
+        });
+        
+        $body_type_female_daimond_box.click(function(){
+            if($avatar_content.hasClass('is_female_avatar')) {
+                if(!$avatar_content.hasClass('is_daimond_body')){
+                    $avatar_content.addClass('is_daimond_body');
+                    $body_type_female_daimond_box.hide();
+                }
+                
+                if($avatar_content.hasClass('is_straight_body')){
+                    $avatar_content.removeClass('is_straight_body');
+                    $body_type_female_straight_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_pear_body')){
+                    $avatar_content.removeClass('is_pear_body');
+                    $body_type_female_pear_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_spoon_body')){
+                    $avatar_content.removeClass('is_spoon_body');
+                    $body_type_female_spoon_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_hourglass_body')){
+                    $avatar_content.removeClass('is_hourglass_body');
+                    $body_type_female_hourglass_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_triangle_body')){
+                    $avatar_content.removeClass('is_triangle_body');
+                    $body_type_female_triangle_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_oval_body')){
+                    $avatar_content.removeClass('is_oval_body');
+                    $body_type_female_oval_box.show();
+                }
+                
+                $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/female/daimond_301/d_body_type07_female_diamond_skintone10_483728.png") no-repeat');
+                
+            }
+        });
+        
+        $body_type_male_straight_box.click(function(){
+            if($avatar_content.hasClass('is_male_avatar')) {
+                if(!$avatar_content.hasClass('is_straight_body')){
+                    $avatar_content.addClass('is_straight_body');
+                    $body_type_male_straight_box.hide();
+                }
+                
+                if($avatar_content.hasClass('is_pear_body')){
+                    $avatar_content.removeClass('is_pear_body');
+                }
+                
+                if($avatar_content.hasClass('is_spoon_body')){
+                    $avatar_content.removeClass('is_spoon_body');
+                }
+                
+                if($avatar_content.hasClass('is_hourglass_body')){
+                    $avatar_content.removeClass('is_hourglass_body');
+                }
+                
+                if($avatar_content.hasClass('is_triangle_body')){
+                    $avatar_content.removeClass('is_triangle_body');
+                }
+                
+                if($avatar_content.hasClass('is_oval_body')){
+                    $avatar_content.removeClass('is_oval_body');
+                    $body_type_male_oval_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_daimond_body')){
+                    $avatar_content.removeClass('is_daimond_body');
+                }
+                
+                $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/male/straight_301/dressup_d_01_male_straight_skintone10_483728.png") no-repeat');
+                
+            }
+        }); 
+        
+        $body_type_male_oval_box.click(function(){
+            if($avatar_content.hasClass('is_male_avatar')) {
+                if(!$avatar_content.hasClass('is_oval_body')){
+                    $avatar_content.addClass('is_oval_body');
+                    $body_type_male_oval_box.hide();
+                }
+                
+                if($avatar_content.hasClass('is_straight_body')){
+                    $avatar_content.removeClass('is_straight_body');
+                    $body_type_male_straight_box.show();
+                }
+                
+                if($avatar_content.hasClass('is_pear_body')){
+                    $avatar_content.removeClass('is_pear_body');
+                }
+                
+                if($avatar_content.hasClass('is_spoon_body')){
+                    $avatar_content.removeClass('is_spoon_body');
+                }
+                
+                if($avatar_content.hasClass('is_hourglass_body')){
+                    $avatar_content.removeClass('is_hourglass_body');
+                }
+                
+                if($avatar_content.hasClass('is_triangle_body')){
+                    $avatar_content.removeClass('is_triangle_body');
+                }
+                
+                if($avatar_content.hasClass('is_daimond_body')){
+                    $avatar_content.removeClass('is_daimond_body');
+                } 
+                
+                $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/male/oval_301/dressup_d_03_male_oval_skintone10_483728.png") no-repeat');
+                
+            }
+        });
+        
         
     });
     
