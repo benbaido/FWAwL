@@ -777,7 +777,11 @@ $(document).ready(function(){
         });
         $options_container.find('.clothes_male').each(function(){
             $(this).show();
+            if(!$(this).hasClass('for_straight_male')){
+                $(this).hide();
+            }
         });
+        
         //hide all the divs in the avatar content with the female tag
         
     });
@@ -1162,6 +1166,14 @@ $(document).ready(function(){
                 
                 $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/male/straight_301/dressup_d_01_male_straight_skintone10_483728.png") no-repeat');
                 
+                $options_container.find('.clothes_male').each(function(){
+                    if(!$(this).hasClass('for_straight_male')){
+                        $(this).hide();
+                    }
+                });
+                
+                
+                
             }
         }); 
         
@@ -1198,6 +1210,12 @@ $(document).ready(function(){
                 } 
                 
                 $avatar_content.css('background', 'url("http://198.199.102.40/partials/dressupgame/img/d_images/male/oval_301/dressup_d_03_male_oval_skintone10_483728.png") no-repeat');
+                
+                $options_container.find('.clothes_male').each(function(){
+                    if(!$(this).hasClass('for_oval_male')){
+                        $(this).hide();
+                    }
+                });
                 
             }
         });
